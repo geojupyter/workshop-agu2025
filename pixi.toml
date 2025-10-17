@@ -1,0 +1,13 @@
+[workspace]
+authors = ["Matt Fisher <mfisher87@gmail.com>"]
+channels = ["conda-forge"]
+name = "workshop-agu2025"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+render = "myst build --strict --html"
+preview = "myst start"
+
+[dependencies]
+mystmd = ">=1.6.3,<2"

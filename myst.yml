@@ -1,0 +1,25 @@
+version: 1
+
+project:
+  title: "Open Source Geospatial Workflows in the Cloud"
+  # description:
+  # keywords: []
+  # authors: []
+  license: "MIT"
+  github: "https://github.com/geojupyter/workshop-agu2025"
+  exclude:
+    - "_*"
+    - "README.md"
+
+
+site:
+  template: "book-theme"
+  actions:
+    - title: "View source"
+      url: "https://github.com/geojupyter/workshop-agu2025"
+  options:
+    folders: true
+    style: "assets/styles/style.css"
+    # favicon: favicon.ico
+    # logo: site_logo.png
+    logo_text: "Open Source Geospatial Workflows in the Cloud"

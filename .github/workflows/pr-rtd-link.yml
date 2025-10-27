@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: 'readthedocs/actions/preview@v1'
         with:
-          project-slug: 'geojupyter-workshop-agu2025'
+          project-slug: 'geojupyter-workshop-open-source-geospatial'
           single-version: true
           single-language: true
           message-template: |

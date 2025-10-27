@@ -6,7 +6,7 @@ project:
   # keywords: []
   # authors: []
   license: "MIT"
-  github: "https://github.com/geojupyter/workshop-agu2025"
+  github: "https://github.com/geojupyter/workshop-open-source-geospatial"
   exclude:
     - "_*"
     - "README.md"
@@ -16,7 +16,7 @@ site:
   template: "book-theme"
   actions:
     - title: "View source"
-      url: "https://github.com/geojupyter/workshop-agu2025"
+      url: "https://github.com/geojupyter/workshop-open-source-geospatial"
   options:
     folders: true
     style: "assets/styles/style.css"

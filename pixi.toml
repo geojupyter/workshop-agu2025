@@ -1,5 +1,5 @@
 [workspace]
-authors = ["Matt Fisher <mfisher87@gmail.com>"]
+authors = []
 channels = ["conda-forge"]
 name = "workshop-open-source-geospatial"
 platforms = ["linux-64"]

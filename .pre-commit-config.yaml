@@ -23,7 +23,7 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: mixed-line-ending
-      # - id: no-commit-to-branch # protects `main` by default
+      - id: no-commit-to-branch # protects `main` by default
       - id: trailing-whitespace
 
   - repo: https://github.com/codespell-project/codespell

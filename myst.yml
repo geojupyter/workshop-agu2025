@@ -10,6 +10,12 @@ project:
   exclude:
     - "_*"
     - "README.md"
+  toc:
+    - file: "index.md"
+    - pattern: "0*.md"
+    - title: "Materials"
+      children:
+        - file: "04-materials/01-working-in-jupyterhub/CryoCloud_demo.ipynb"
 
 
 site:

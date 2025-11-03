@@ -26,3 +26,9 @@ particularly love solving geospatial problems. I serve on the editorial board fo
 Geospatial Forum (founding member), the Pangeo Steering Council, and contribute to many scientific
 Python libraries. At the moment, I'm focused on optimizing delivery of NASA datasets using Virtual Zarr.
 I'm also currently improving my skills in Kubernetes and Rust.
+
+## [Qiusheng Wu](https://github.com/giswqs)
+
+**Associate Professor @ [University of Tennessee, Knoxville](https://geography.utk.edu/people/instructional-faculty/wu-qiusheng/)**
+
+Dr. Wu’s research focuses on geospatial data science and open-source software development. He is the creator of several widely used open-source Python packages, including geemap, leafmap, segment-geospatial, and geoai, which support advanced geospatial analysis and interactive visualization. His open-source work is available at <https://github.com/opengeos>.

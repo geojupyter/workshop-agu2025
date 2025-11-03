@@ -21,7 +21,7 @@ approachable and enjoyable for all.
 **Cloud Engineer @ [Development Seed](https://developmentseed.org/)**
 
 I build open-source solutions that enable change on a global scale as an engineer at
-Development Seed. I enjoy increasing the accessibility of data that drives decision-making and
+Development Seed. I enjoy increasing the accessibility of data that drive decision-making and
 particularly love solving geospatial problems. I serve on the editorial board for the Cloud Native
 Geospatial Forum (founding member), the Pangeo Steering Council, and contribute to many scientific
 Python libraries. At the moment, I'm focused on optimizing delivery of NASA datasets using Virtual Zarr.

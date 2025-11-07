@@ -13,7 +13,7 @@ repos:
       # Check for common mistakes
       - id: check-added-large-files
       - id: check-case-conflict
-      # - id: check-illegal-windows-names # TODO: Enable in next release
+      - id: check-illegal-windows-names
       - id: check-merge-conflict
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable

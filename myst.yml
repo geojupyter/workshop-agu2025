@@ -15,7 +15,7 @@ project:
     - pattern: "0*.md"
     - title: "Materials"
       children:
-        - file: "04-materials/01-working-in-jupyterhub/CryoCloud_demo.ipynb"
+        - file: "materials/01-working-in-jupyterhub/CryoCloud_demo.ipynb"
 
 
 site:

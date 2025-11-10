@@ -115,6 +115,48 @@ authors:
 Follow the [Diátaxis](https://diataxis.fr) principles for your audience!
 
 
+### Vocabulary
+
+All vocabulary should be defined in the [](../03-vocabulary.md) page.
+Follow the pre-existing pattern to add new terms.
+
+References should be conscious of case.
+By default, when referencing a term, the same case that's used in the definition will be
+used in the reference.
+For example:
+
+```{myst}
+:::{glossary}
+Example term
+: Example definition
+:::
+
+Using {term}`example term` in a sentence, the case is usually incorrect.
+```
+
+Instead:
+
+```{myst}
+:::{glossary}
+Example term
+: Example definition
+:::
+
+We can explicitly define the case of our {term}`example term <example term>`.
+```
+
+Similarly, if you want to use a plural or other alternate form of a term:
+
+```{myst}
+:::{glossary}
+Example term
+: Example definition
+:::
+
+Why can't I hold all these {term}`example terms <example term>`?!
+```
+
+
 ### Headings
 
 * Use consistent heading structure so that the generated document outline on the right

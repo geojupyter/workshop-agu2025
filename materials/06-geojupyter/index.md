@@ -16,7 +16,7 @@ authors:
     github: "mfisher87"
 ---
 
-# 🪐 5 - GeoJupyter
+# 🪐 6 - GeoJupyter
 
 :::{note} 🛝 Slides
 :icon: false

@@ -39,3 +39,8 @@ are you writing?
 
 * [Learning-oriented tutorial](https://diataxis.fr/tutorials/)
 * [Understanding-oriented explanation](https://diataxis.fr/explanation/)
+
+
+### Workshop environment
+
+Please reference [the instructions in the `docker/` subdirectory](docker/README.md)!

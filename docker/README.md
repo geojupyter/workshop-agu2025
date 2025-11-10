@@ -22,3 +22,10 @@ It uses familiar
 like conda's `environment.yml` to generate the image, and the author of the repo2docker
 repository doesn't need to deal with frustrating complexities like environment
 activation or requirements to work as expected on a JupyterHub.
+
+
+## Changing dependencies
+
+Edit dependency specifications in `environment.yml`.
+
+You shouldn't need to change any other files.

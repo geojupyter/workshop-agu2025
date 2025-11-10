@@ -1,3 +1,13 @@
+---
+authors:
+  - name: "Qiusheng Wu"
+    affiliations:
+      - "University of Tennessee, Knoxville"
+    email: "qwu18@utk.edu"
+    orcid: "0000-0001-5437-4073"
+    github: "giswqs"
+---
+
 # 🤖 3 - Integrating artificial intelligence (AI) with geospatial data analysis with [GeoAI](https://geoai.gishub.org/)
 
 :::{note} 🛝 Slides

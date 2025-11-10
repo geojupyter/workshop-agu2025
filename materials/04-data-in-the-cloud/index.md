@@ -1,3 +1,13 @@
+---
+authors:
+  - name: "Max Jones"
+    affiliations:
+      - "Development Seed"
+    email: "max@developmentseed.org"
+    orcid: "0000-0003-0180-8928"
+    github: "maxrjones"
+---
+
 # ☁️ 4 - Data in the Cloud 101
 
 :::{note} 🛝 Slides

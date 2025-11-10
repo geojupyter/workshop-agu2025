@@ -1,4 +1,14 @@
-# 👁️ 2 - Interactive visualiztion of raster and vector data
+---
+authors:
+  - name: "Qiusheng Wu"
+    affiliations:
+      - "University of Tennessee, Knoxville"
+    email: "qwu18@utk.edu"
+    orcid: "0000-0001-5437-4073"
+    github: "giswqs"
+---
+
+# 👁️ 2 - Interactive visualization of raster and vector data
 
 :::{note} 🛝 Slides
 :icon: false

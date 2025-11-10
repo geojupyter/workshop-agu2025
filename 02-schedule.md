@@ -13,7 +13,7 @@ AGU!
 | Time      | Duration    | Topic                                                                               | Presenter(s)      |
 |-----------|-------------|-------------------------------------------------------------------------------------|-------------------|
 | 8:30 AM   | 10 minutes  | [Meet the instructors](00-instructors.md)                                           | All               |
-| 8:40 AM   | 45 minutes  | [](materials/01-working-in-jupyterhub/CryoCloud_demo.ipynb)                         | Tasha             |
+| 8:40 AM   | 45 minutes  | [](materials/01-working-in-jupyterhub/index.md)                                     | Tasha             |
 | 9:25 AM   | 10 minutes  | **Break**                                                                           |                   |
 | 9:35 AM   | 60 minutes  | [](materials/02-interactive-viz/index.md)                                           | Qiusheng          |
 | 10:35 AM  | 10 minutes  | **Break**                                                                           |                   |

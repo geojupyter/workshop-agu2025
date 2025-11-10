@@ -1,4 +1,4 @@
-# 5 - Sharing & Publishing Your Work
+# 📢 5 - Sharing & Publishing Your Work
 
 :::{note} 🛝 Slides
 :icon: false

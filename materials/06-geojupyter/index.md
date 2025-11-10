@@ -1,4 +1,4 @@
-# 5 - GeoJupyter
+# 🪐 5 - GeoJupyter
 
 :::{note} 🛝 Slides
 :icon: false

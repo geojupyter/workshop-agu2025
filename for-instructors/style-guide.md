@@ -3,7 +3,7 @@
 Reference the source code of this document to see how the content was produced.
 
 :::{note}
-The [{myst} directive](https://mystmd.org/guide/directives#directive-myst) is
+The [`{myst}` directive](https://mystmd.org/guide/directives#directive-myst) is
 being used to show both source code and the rendered output in this document;
 please do not use the `{myst}` directive in your module.
 :::

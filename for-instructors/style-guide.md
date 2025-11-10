@@ -123,6 +123,39 @@ Follow the [Diátaxis](https://diataxis.fr) principles for your audience!
 * Use "Sentence case" for all other headers.
 
 
+### Emojis
+
+Use emojis in document titles.
+
+For repeated elements, use emojis.
+
+
+#### Steps
+
+Use 🔧 in a header to indicate a step.
+
+
+#### Testing
+
+Use 🧪 in a header to indicate that the reader should stop to test their work.
+
+
+#### Noticing
+
+Use 👀 in a callout to indicate that the user should notice something, e.g. a UI element
+or CLI output.
+E.g.:
+
+```{myst}
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...these commands produce no output when successful.
+:::
+```
+
+
 ### Voice / language
 
 #### [Tutorials](https://diataxis.fr/tutorials/)

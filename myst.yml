@@ -17,6 +17,9 @@ project:
     - title: "Materials"
       children:
         - pattern: "materials/0*/index.md"
+    - title: "For instructors"
+      children:
+        - pattern: "for-instructors/*.md"
 
 
 site:

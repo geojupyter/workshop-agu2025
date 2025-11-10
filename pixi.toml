@@ -10,4 +10,4 @@ render = "myst build --strict --html"
 preview = "myst start"
 
 [dependencies]
-mystmd = ">=1.6.3,<2"
+mystmd = ">=1.6.4,<2"

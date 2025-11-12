@@ -1,4 +1,4 @@
-# Dogfooding our processes
+# 🐕 Dogfooding our processes
 
 ["Dogfooding" or "eating our own dog food"](https://en.wikipedia.org/wiki/Eating_your_own_dog_food)
 refers to the practice of using our own product.

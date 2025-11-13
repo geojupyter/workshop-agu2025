@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - "main"
-      - "add-docker-stuff"
     paths:
       - "docker/*"
       - ".github/workflows/build-and-publish-docker-image.yml"

@@ -117,7 +117,7 @@ Follow the [Diátaxis](https://diataxis.fr) principles for your audience!
 
 ### Vocabulary
 
-All vocabulary should be defined in the [](../03-vocabulary.md) page.
+All vocabulary should be defined in the [](../reference/00-vocabulary.md) page.
 Follow the pre-existing pattern to add new terms.
 
 References should be conscious of case.

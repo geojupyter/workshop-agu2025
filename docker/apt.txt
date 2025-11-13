@@ -1,0 +1,23 @@
+# Unix utilities
+man
+man-db
+manpages-posix
+manpages-dev
+manpages-posix-dev
+rsync
+tree
+tmux
+htop
+
+# Web utilities
+curl
+wget
+
+# Editors
+nano
+jed
+emacs-nox
+vim
+
+# Version control
+git

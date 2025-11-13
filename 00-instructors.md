@@ -34,3 +34,11 @@ Dr. Wu’s research focuses on geospatial data science and open-source software 
 **Founder @ [VorGeo](https://www.vorgeo.com/)**
 
 Dr. Tyler Erickson is the founder of the geospatial consultancy VorGeo, a Technical Fellow at non-profit [Radiant Earth](https://radiant.earth/), and a founding editorial board member of the [Cloud-Native Geospatial Forum](https://cloudnativegeo.org/). Previously he led the developer relations team for [Google Earth Engine](https://earthengine.google.com/). Dr. Erickson's work focuses on building communities & ecosystems around emerging technologies, with an emphasis on technologies that can be leveraged by environmental sustainability projects.
+
+## [Tasha Snow](https://tsnow03.github.io)
+
+**Research Scientist @ [NASA Goddard Space Flight Center (GSFC) / Earth System Science Interdisciplinary Center (ESSIC), University of Maryland](https://essic.umd.edu/)** \
+**Co-Founder @ [CryoCloud](https://cryointhecloud.com)**
+
+I am one of the leads of the CryoCloud community meant to help geoscientist transition to cloud computing, which revolves around a JupyterHub cloud computing platform. I provide training, maintain our environments, and develop data workflows that are idealized for geoscience work in the cloud.
+I'm also a research scientist in the Cryospheric Sciences Lab at NASA GSFC and ESSIC. My research foci are glaciology, oceanography, cloud computing, and open science.

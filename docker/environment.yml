@@ -48,7 +48,10 @@ dependencies:
   - "gh"
   - "gh-scoped-creds"
 
+  # Infrastructure
+  - "jupyter-server-proxy"  # Enable proxying MyST sites built from CLI, accessed at `$PREFIX/proxy/$PORT`
+
   # Pip-only dependencies... ideally we get these on conda-forge.
   - "pip"
   - pip:
-    - "jupyter-myst-build-proxy"
+    - "jupyter-myst-build-proxy"  # Automatic build and proxying of MyST sites, triggered by requests to `$PREFIX/myst-build/$PATH_TO_MYST_PROJECT`

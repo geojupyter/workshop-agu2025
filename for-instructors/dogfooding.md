@@ -39,7 +39,7 @@ few seconds, and then you'll see your fully-built MyST site!
 
 ### Tradeoffs
 
-Unfortunately, this extension uses the `myst build --html` command instead of `myst
+This extension uses the `myst build --html` command instead of `myst
 start`
 ([read more here](https://github.com/ryanlovett/jupyter-myst-build-proxy/issues/8)).
 As a consequence, builds are not triggered automatically when edits are performed.
@@ -51,6 +51,9 @@ Builds are triggered in two ways:
   A nice UI shows the user progress in their browser during the build.
 * Subsequent builds: The user must append `/?rebuild=1` to the URL to trigger subsequent
   builds.
+
+There is currently no known way to use the MyST preview server `myst start` in a
+JupyterLab environment. See https://github.com/jupyter-book/mystmd/issues/302
 
 
 #### Pros

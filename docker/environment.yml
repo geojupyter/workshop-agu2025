@@ -47,3 +47,8 @@ dependencies:
   # GitHub utilities
   - "gh"
   - "gh-scoped-creds"
+
+  # Pip-only dependencies... ideally we get these on conda-forge.
+  - "pip"
+  - pip:
+    - "jupyter-myst-build-proxy"

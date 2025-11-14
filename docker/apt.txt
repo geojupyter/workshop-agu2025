@@ -1,4 +1,5 @@
 # Unix utilities
+bash-completion
 man
 man-db
 manpages-posix

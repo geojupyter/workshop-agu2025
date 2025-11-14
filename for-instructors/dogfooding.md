@@ -19,4 +19,4 @@ Once you've set up GitHub authentication, you can use Git normally.
 
 ## Previewing the MyST site
 
-<TODO>
+TODO

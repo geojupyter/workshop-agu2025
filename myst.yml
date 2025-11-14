@@ -14,9 +14,12 @@ project:
   toc:
     - file: "index.md"
     - pattern: "0*.md"
-    - title: "Materials"
+    - title: "Modules"
       children:
-        - pattern: "materials/0*/index.md"
+        - pattern: "modules/0*/index.md"
+    - title: "Reference"
+      children:
+        - pattern: "reference/*.md"
     - title: "For instructors"
       children:
         - pattern: "for-instructors/*.md"

@@ -116,7 +116,7 @@ import leafmap.maplibregl as leafmap
 
 ### Basic Map Setup
 
-Let’s start by creating a simple interactive map with default settings. This basic setup provides simple map with the `dark-matter` style on which you can add data layers, controls, and other customizations.
+Let’s start by creating a simple interactive map with default settings. This basic setup provides a simple map with the `dark-matter` style on which you can add data layers, controls, and other customizations.
 
 ```{code-cell} ipython3
 m = leafmap.Map()
@@ -248,7 +248,7 @@ XYZ tile layers allow integration of specific tile services like topographic, sa
 ```{code-cell} ipython3
 m = leafmap.Map()
 url = "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}"
-m.add_tile_layer(url, name="USGS TOpo", attribution="USGS", opacity=1.0, visible=True)
+m.add_tile_layer(url, name="USGS Topo", attribution="USGS", opacity=1.0, visible=True)
 m
 ```
 
@@ -361,9 +361,7 @@ m
 ### Line Data
 
 ```{code-cell} ipython3
-url = (
-    "https://data.gishub.org/duckdb/cables.geojson"
-)
+url = "https://data.gishub.org/duckdb/cables.geojson"
 m = leafmap.Map(style="liberty", projection="globe")
 m.add_vector(url, name="cables")
 m.add_popup("cables")
@@ -488,8 +486,6 @@ body {
 m.add_html(html, bg_color="transparent")
 m
 ```
-
-+++
 
 ## Adding Components to the Map
 

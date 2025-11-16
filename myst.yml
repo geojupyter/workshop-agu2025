@@ -16,14 +16,13 @@ project:
     - pattern: "0*.md"
     - title: "Modules"
       children:
-        - pattern: "modules/0*/index.md"
+        - pattern: "modules/0*/index.*"
     - title: "Reference"
       children:
         - pattern: "reference/*.md"
     - title: "For instructors"
       children:
         - pattern: "for-instructors/*.md"
-
 
 site:
   template: "book-theme"

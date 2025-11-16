@@ -10,21 +10,6 @@ authors:
 
 # 👁️ 2 - Interactive visualization of raster and vector data
 
-:::{note} 🛝 Slides
-:icon: false
-:class: dropdown
-
-<iframe
-    src="https://docs.google.com/presentation/d/e/2PACX-1vRPPScGGDg9PKQiEQGCj5GWSt5TnrHUyTOPoSRKrLAs9sXKuj2BTwc4SzCpXYrDE2p6B7hpRFgpoguC/pubembed?start=false&loop=false&delayms=60000"
-    frameborder="0"
-    width="960"
-    height="569"
-    allowfullscreen="true"
-    mozallowfullscreen="true"
-    webkitallowfullscreen="true">
-</iframe>
-:::
-
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/opengeos/leafmap/blob/master/docs/workshops/AGU_2025.ipynb)
 
 ## Introduction

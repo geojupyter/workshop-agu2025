@@ -10,21 +10,6 @@ authors:
 
 # 🤖 3 - Integrating artificial intelligence with geospatial data analysis and visualization
 
-:::{note} 🛝 Slides
-:icon: false
-:class: dropdown
-
-<iframe
-    src="https://docs.google.com/presentation/d/e/2PACX-1vSmVSVQQs4P0Y3UsteXXjOVFz5xXlQkq2N67BxRKcjAIayPPB3Tpr-79k6pvCeNErCQdZap16Gc8cat/pubembed?start=false&loop=false&delayms=60000"
-    frameborder="0"
-    width="960"
-    height="569"
-    allowfullscreen="true"
-    mozallowfullscreen="true"
-    webkitallowfullscreen="true">
-</iframe>
-:::
-
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/opengeos/geoai/blob/main/docs/workshops/AGU_2025.ipynb)
 
 ## Introduction

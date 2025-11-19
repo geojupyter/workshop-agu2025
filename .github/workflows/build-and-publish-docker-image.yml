@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - "main"
-    paths:
+    paths: &paths
       - "docker/*"
       - ".github/workflows/build-and-publish-docker-image.yml"
+  pull_request:
+    paths: *paths
 
 
 permissions:

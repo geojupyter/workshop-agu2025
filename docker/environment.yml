@@ -38,6 +38,10 @@ dependencies:
   - "geoviews"
   - "maplibre"
 
+  # AI
+  - "geoai"
+  - "pytorch=*=cuda*"
+
   # Publishing
   - "mystmd"
   - "typst"

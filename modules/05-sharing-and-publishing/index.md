@@ -142,24 +142,49 @@ After a few seconds, the build will complete and you can see your fully-built si
 :::
 
 
-At this point, you can visit the printed URL to preview your site.
-The preview will automatically update any time you change a file.
-:::
-::::::
-
-
-### Hosting your website for free
-
-#### GitHub Pages
+### 💪 Exercise A: Build _this_ MyST website in JupyterLab
 
 TODO
 
 
-#### ReadTheDocs
+
+### 💪 Exercise B: Build a MyST website _from scratch_ in JupyterLab
 
 TODO
 
 
-## Building a paper
+## Building a PDF with MyST
+
+TODO
+
+
+### 💪 Exercise C: Render a PDF from the same source as your website
+
+TODO
+
+
+## Hosting your website for free
+
+### GitHub Pages
+
+TODO
+
+
+### ReadTheDocs
+
+TODO
+
+
+### 💪 Exercise D: Publish your paper and website to GitHub
+
+TODO
+
+
+## Getting a DOI
+
+TODO
+
+
+### 💪 Exercise E: Get a DOI for your published content on GitHub
 
 TODO

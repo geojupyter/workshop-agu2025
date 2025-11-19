@@ -9,4 +9,7 @@ set -euo pipefail
 export GH_SCOPED_CREDS_CLIENT_ID="Iv1.bd27058fd393e285"
 export GH_SCOPED_CREDS_APP_URL="https://github.com/apps/cryocloud-github-access"
 
+# Enable jupyter-myst-build-proxy post-build step which adds a nice Rebuild button
+export JUPYTER_MYST_BUILD_PROXY_POSTBUILD="true"
+
 exec "$@"

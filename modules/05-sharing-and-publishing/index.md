@@ -40,23 +40,94 @@ authors:
 :::
 
 
-## Technical publishing with MyST
+## What is MyST?
 
-MyST (Markedly Structured Text) is both:
-
-* A language, which extends Markdown, for authoring technical documents, including
-  executable code cells, **and**
-* A software tool for executing and rendering technical documents from MyST source to
-  multiple output formats including websites, PDFs, $ \LaTeX $, Typst, MS Word, JATS,
-  and `CITATION.cff`.
+MyST (Markedly Structured Text) is both a language and a software tool.
 
 
-## Building a website
+### MyST, the language
 
-### Building a MyST site in JupyterLab
+MyST, as a language, extends Markdown.
 
-This JupyterLab instance has MyST installed, plus a special configuration for building
-and exposing a MyST site at a special URL.
+It adds new syntax, including
+["roles" and "directives"](https://mystmd.org/guide/quickstart-myst-markdown#directives-and-roles)
+that enable advanced functionality like
+[executable code cells](https://mystmd.org/guide/notebooks-with-markdown#code-cell),
+[callouts](https://mystmd.org/guide/admonitions) (also known as admonitions),
+and [glossaries](https://mystmd.org/guide/glossaries-and-terms), and more.
+There is also dedicated syntax for
+[citations](https://mystmd.org/guide/citations#markdown-citations),
+[math](https://mystmd.org/guide/math),
+and more.
+
+Directives are like functions that can receive Markdown content, for example an
+callout's text. Roles are just like directives, except they are _inline_ with other
+Markdown text.
+
+
+#### Example `{glossary}` directive and `{term}` role
+
+```{myst}
+:::{glossary}
+Term
+: A word or phrase which can be defined in a **glossary** directive.
+Directives can include **_rich_** Markdown content.
+:::
+
+{term}`Term` roles create inline references, within your Markdown text, to glossary definitions.
+Try hovering over the word "Term" to see a definition.
+```
+
+:::{tip} 💪 Mini-exercise
+:icon: false
+
+Try changing the code for the directive and role in the example above and immediately
+observe the results.
+:::
+
+
+### MySTMD, the software
+
+[MySTMD](https://mystmd.org/) is a software tool for executing and rendering technical
+documents from source in MyST or Notebook input formats to multiple output formats
+including websites, PDFs, $ \LaTeX $, Typst, MS Word, JATS, and `CITATION.cff`.
+
+MySTMD is the software that created this website from its
+[source code](https://github.com/geojupyter/workshop-open-source-geospatial) (written in
+MyST and Jupyter Notebook format).
+
+
+## Building a website with MyST
+
+### The normal way
+
+:::{important}
+Because we're working in CryoCloud for this workshop, this section is provided for
+informational purposes.
+We'll be following the instructions below for using MyST in JupyterLab.
+:::
+
+With MySTMD [installed](https://mystmd.org/guide/installing), you can build a MyST
+website from source with one command:
+
+```bash
+myst build --html
+```
+
+During development, you can also use MyST's convenient preview server to automatically
+rebuild your site any time you change its content:
+
+```bash
+myst start
+```
+
+
+### In JupyterLab
+
+As workshop participants, you have access to CryoCloud, which provides a JupyterLab
+instance with MyST pre-installed.
+CryoCloud also comes with a special configuration for building a MyST site without the
+use of the terminal.
 
 To preview a MyST site in JupyterLab, view instructions at [](../../reference/04-using-myst.md).
 
@@ -70,32 +141,6 @@ displayed.
 After a few seconds, the build will complete and you can see your fully-built site!
 :::
 
-::::::{note} Building a MyST site on your local machine
-:class: dropdown
-
-It's important to us that you can take these skills home with you!
-Some things will be slightly different outside of JupyterLab.
-
-The special configuration for building and hosting our MyST site in JupyterLab is not
-necessary on a local computer.
-We even have some special features that we can't use in the JupyterLab environment,
-for example a live-updating preview server:
-
-```bash
-myst start
-```
-
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
-...when the preview server successfully starts, the following message is printed:
-
-```
-🔌 Server started on port 3000!  🥳 🎉
-
-        👉  http://localhost:3000  👈
-```
 
 At this point, you can visit the printed URL to preview your site.
 The preview will automatically update any time you change a file.

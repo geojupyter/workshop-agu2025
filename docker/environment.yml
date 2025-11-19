@@ -27,6 +27,7 @@ dependencies:
   - "rasterio"
   - "rioxarray"
   - "shapely"
+  - "fiona"
   - "pystac-client"
 
   # geo viz
@@ -35,6 +36,7 @@ dependencies:
   - "folium"
   - "cartopy"
   - "geoviews"
+  - "maplibre"
 
   # Publishing
   - "mystmd"

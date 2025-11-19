@@ -16,7 +16,8 @@ project:
     - pattern: "0*.md"
     - title: "Modules"
       children:
-        - pattern: "modules/0*/index.*"
+        - pattern: "modules/0*/index.{md,ipynb}"
+
     - title: "Reference"
       children:
         - pattern: "reference/*.md"

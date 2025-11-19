@@ -33,8 +33,20 @@ Diátaxis is a fantastic resource for writing documentation for various audience
   Goal: Provide in-depth understanding of a concept, often linking multiple concepts
   together or explaining a technical decision, architecture, or history.
 
+## Repository structure
 
-## Structure
+### Notebooks vs. Markdown
+
+Notebooks and Markdown can be used interchangeably.
+This means the content for your module can be stored in `index.md` or `index.ipynb`.
+
+Supporting Notebooks can be stored as neighbors to your index file, and your Notebooks
+can link to each other.
+When participants open the Notebooks in JupyterLab they can click the links to
+automatically open other Notebooks.
+
+
+## Content structure
 
 All modules should have a consistent structure!
 

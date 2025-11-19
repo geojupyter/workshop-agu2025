@@ -17,13 +17,13 @@ project:
     - title: "Modules"
       children:
         - pattern: "modules/0*/index.{md,ipynb}"
+
     - title: "Reference"
       children:
         - pattern: "reference/*.md"
     - title: "For instructors"
       children:
         - pattern: "for-instructors/*.md"
-
 
 site:
   template: "book-theme"

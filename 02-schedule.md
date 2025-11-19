@@ -14,9 +14,9 @@ AGU!
 | 8:30 AM  | 10 minutes | [Meet the instructors](00-instructors.md)     | All          |
 | 8:40 AM  | 45 minutes | [](modules/01-working-in-jupyterhub/index.md) | Tasha        |
 | 9:25 AM  | 10 minutes | **Break**                                     |              |
-| 9:35 AM  | 60 minutes | [](modules/02-interactive-viz/index.md)       | Qiusheng     |
+| 9:35 AM  | 60 minutes | [](modules/02-interactive-viz/index.ipynb)    | Qiusheng     |
 | 10:35 AM | 10 minutes | **Break**                                     |              |
-| 10:45 AM | 60 minutes | [](modules/03-integrating-ai/index.ipynb)     | Qiusheng     |
+| 10:45 AM | 60 minutes | [](modules/03-integrating-ai/index.ipynb)        | Qiusheng     |
 | 11:45 AM | 15 minutes | **Q&A**                                       | All          |
 
 ## 🍽️ Lunch! (12:00 - 1:30)

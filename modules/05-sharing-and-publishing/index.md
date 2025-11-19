@@ -41,6 +41,15 @@ authors:
 :::
 
 
+:::{tip} 🧭 Where we are going
+:icon: false
+
+In this tutorial we will build and publish a website and PDF paper from scratch.
+We'll publish the website and PDF for free on GitHub, and enable automatic generation of
+DOIs for our published product.
+:::
+
+
 ## What is MyST?
 
 MyST (Markedly Structured Text) is both a language and a software tool.

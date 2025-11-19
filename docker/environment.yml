@@ -56,4 +56,4 @@ dependencies:
   # Pip-only dependencies... ideally we get these on conda-forge.
   - "pip"
   - pip:
-    - "jupyter-myst-build-proxy"  # Automatic build and proxying of MyST sites, triggered by requests to `$PREFIX/myst-build/$PATH_TO_MYST_PROJECT`
+    - "jupyter-myst-build-proxy >=0.5.0"

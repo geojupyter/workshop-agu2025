@@ -4,16 +4,22 @@ authors:
     affiliations:
       - "University of California, Berkeley"
       - "Schmidt Center for Data Science and Environment"
+    equal_contributor: true
     email: "fernando.perez@berkeley.edu"
     orcid: "0000-0002-1725-9815"
     github: "fperez"
+    corresponding: true
   - name: "Matt Fisher"
     affiliations:
       - "University of California, Berkeley"
       - "Schmidt Center for Data Science and Environment"
+    equal_contributor: true
     email: "matt.fisher@berkeley.edu"
     orcid: "0000-0003-3260-5445"
     github: "mfisher87"
+    bluesky: "mfisher87.bsky.social"
+    linkedin: "https://www.linkedin.com/in/mattfisher8"
+    corresponding: true
 ---
 
 # 📢 5 - Sharing & Publishing Your Work

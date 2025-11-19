@@ -55,6 +55,8 @@ jobs:
         REPO_DIR: "/srv/repo"
         # Fix man pages that are disabled by Ubuntu 18 minimal base image
         # APPENDIX_FILE: "appendix"
+        # Skip pushing for PRs:
+        NO_PUSH: "${{ github.event_name == 'pull_request' }}"
 
     # Lets us monitor disks getting full as images get bigger over time
     - name: "Show how much disk space is left"

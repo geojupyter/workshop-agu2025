@@ -177,7 +177,7 @@ file named `myst.yml`.
 
 Location the MyST project configuration file, `myst.yml`, in the file browser.
 
-Right click this file and select the top option from the menu: "Build MyST project".
+Right click this file and select the top option from the menu: "Build MyST Project".
 
 :::{important} 👀 You should notice...
 :class: simple
@@ -202,12 +202,241 @@ At the top-right is a button with the text "Rebuild".
 
 ### 💪 Exercise B: Build a MyST website _from scratch_ in JupyterLab
 
-TODO
+#### Create a new empty GitHub repository
+
+In the GitHub UI, click the `+` icon at the top-right. Select "New repository".
+
+Select your username as the owner, and enter `myst-exercise` as the repository name.
+
+![](./github-repo-name.jpg)
+
+Leave everything else as default, and click "Create repository".
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...GitHub shows you a page for your new, empty repository.
+
+A "Quick setup" section includes a URL you can copy.
+:::
+
+
+#### Clone your repository
+
+From your repository homepage's "Quick start" menu, select "HTTPS", then copy the URL.
+
+On your JupyterHub server, open a new terminal.
+
+Run these commands, replacing the placeholder with your actual repository URL:
+
+```bash
+# Change to your home directory
+cd
+
+# Clone the repository
+git clone <YOUR_REPOSITORY_HTTPS_URL_HERE>
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+This command produces the following output:
+
+```
+Cloning into 'myst-exercise'...
+warning: You appear to have cloned an empty repository.
+```
+:::
+
+
+#### Initialize your MyST project
+
+First, change directory into your empty repository:
+
+```bash
+cd myst-exercise
+```
+
+Next, initialize your MyST project with configuration needed to generate a website:
+
+```bash
+myst init --project --site
+```
+
+
+#### Create some content
+
+Create a new file `index.md` using the JupyterLab interface:
+
+* Right-click in the empty space in the file browser.
+* Select "New file".
+* Input the name `index.md`.
+
+Enter the following content in the file (click the copy button at the top-right of this
+code block):
+
+```{code} markdown
+:filename: index.md
+
+Hello, world!
+
+$$
+1 + 1 = 2
+$$
+```
+
+The `$$` symbols delimit a math equation, and you can write any $ \LaTeX $ within.
+
+
+#### Build your site
+
+Right-click the `myst.yml` file in the file browser, and select "Build MyST Project".
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...like last time, a new browser tab opens showing a loading spinner while your site
+builds.
+
+When it's done, you should see your "Hello, world!" message, plus our amazing math
+equation, rendered on the page.
+
+
+At the top-right, there is a "Rebuild" button.
+:::
+
+
+#### Try some other MyST features and rebuild
+
+:::{important}
+**Keep the tab displaying your website open!**
+
+If you close this tab, you can always re-open it by right-clicking `myst.yml` and
+selecting "Build MyST Project" again.
+:::
+
+MyST offers many useful features for technical publishing, including
+[superscripts and subscripts](https://mystmd.org/guide/typography#subscript-superscript),
+[keyboard input notation](https://mystmd.org/guide/typography#keyboard-input),
+[abbreviations](https://mystmd.org/guide/typography#abbr-role),
+[executable code cells](https://mystmd.org/guide/notebooks-with-markdown#code-cell),
+[callouts](https://mystmd.org/guide/admonitions) (also known as admonitions),
+[math](https://mystmd.org/guide/math),
+[figures](https://mystmd.org/guide/figures),
+[diagrams](https://mystmd.org/guide/diagrams),
+[asides](https://mystmd.org/guide/asides),
+[dropdowns, grids, tabs, cards, buttons](https://mystmd.org/guide/dropdowns-cards-and-tabs),
+[glossaries](https://mystmd.org/guide/glossaries-and-terms), and more.
+
+Try out some of these features in your MyST site.
+
+**Each time you make changes, rebuild the site by clicking "Rebuild" at the top-right of
+the site.**
+
+Make changes, rebuild, and view the result as many time as you need!
+
+
+#### Give your site a title
+
+Edit your `myst.yml` file by double-clicking it in JupyterLab.
+
+Uncomment the `title` key and populate a title for your site, e.g. "My site".
+
+Your config file should now look like this:
+
+```{code} yaml
+:filename: myst.yml
+:emphasize-lines: 5
+
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 60e9ac52-956d-4811-800a-68be74a85174
+  title: "My site"
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/mfisher87/myst-exercise
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+```
+
+**Save and rebuild your site.**
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...the text near the top-left of your site now says "My site" (or whatever you
+chose for your title) instead of "index".
+
+The browser tab should also now be titled "My site".
+
+But it still says "Made with MyST" at the very top!
+:::
+
+
+#### Replace "Made with MyST" text
+
+"Made with MyST" is the default text that appears at the top of your site if
+you don't provide a `logo` or `logo_text`.
+
+We can update the text at the very top to replace "Made with MyST" by editing
+`myst.yml` again and setting `site.options.logo_text`.
+First, uncomment `options:`, then add a line underneath it to set `logo_text`.
+**Indentation is important**.
+
+Your config file should now look like this:
+
+```{code} yaml
+:filename: myst.yml
+:emphasize-lines: 14
+
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 60e9ac52-956d-4811-800a-68be74a85174
+  title: "My site"
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/mfisher87/myst-exercise
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  options:
+    logo_text: "My logo text"
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+```
+
+**Save and rebuild your site.**
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...the text near at the very top-left of your site now says "My logo text" (or whatever you
+chose for your logo text) instead of "Made with MyST".
+:::
 
 
 #### 🧠 What do we know now?
 
-TODO
+* `myst.yml` controls what the site looks like, including the title, logo, logo text, and more.
+* The `index.md` file is the "home page" for our site by default.
+* The development loop for a MyST site in JupyterLab looks like:
+  * Right-click `myst.yml` and "Build MyST Project"
+  * In the newly opened browser tab, you can view a preview of your MyST site.
+  * Change your site content by editing `myst.yml`, Markdown files, or Notebooks.
+  * View the results of those changes by clicking "Rebuild" at the top of your site preview.
 
 
 ## Building a PDF with MyST

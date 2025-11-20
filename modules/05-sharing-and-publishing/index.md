@@ -205,12 +205,21 @@ At the top-right is a button with the text "Rebuild".
 TODO
 
 
+#### 🧠 What do we know now?
+
+TODO
+
+
 ## Building a PDF with MyST
 
 TODO
 
 
 ### 💪 Exercise C: Render a PDF from the same source as your website
+
+TODO
+
+#### 🧠 What do we know now?
 
 TODO
 
@@ -231,6 +240,10 @@ TODO
 
 TODO
 
+#### 🧠 What do we know now?
+
+TODO
+
 
 ## Getting a DOI
 
@@ -238,5 +251,9 @@ TODO
 
 
 ### 💪 Exercise E: Get a DOI for your published content on GitHub
+
+TODO
+
+#### 🧠 What do we know now?
 
 TODO

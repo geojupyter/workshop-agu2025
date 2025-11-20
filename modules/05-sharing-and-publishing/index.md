@@ -154,8 +154,50 @@ After a few seconds, the build will complete and you can see your fully-built si
 
 ### 💪 Exercise A: Build _this_ MyST website in JupyterLab
 
-TODO
+_TODO_: Will the participants already have the workshop cloned? Or does that need to be
+a step here?
 
+
+#### Navigate to the correct directory in the file browser
+
+On the left panel, ensure the JupyterLab file browser tab (📁 icon) is selected.
+
+Double click the folder in the file browser named `workshop-open-source-geospatial`.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...a listing of around a dozen files and directories, including Markdown files and a
+file named `myst.yml`.
+:::
+
+
+#### Build the MyST website
+
+Location the MyST project configuration file, `myst.yml`, in the file browser.
+
+Right click this file and select the top option from the menu: "Build MyST project".
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...a new browser tab opens with a loading spinner and the title "Building MyST Site".
+
+After around 5 seconds, the build will complete and the website content will display
+automatically.
+
+At the top-left is the website title: "Open Source Geospatial Workflows in the Cloud".
+At the top-right is a button with the text "Rebuild".
+:::
+
+
+#### 🧠 What do we know now?
+
+* A MyST project is configured by a `myst.yml` file
+* In JupyterLab, we can right-click `myst.yml` to trigger a build (requires
+  [jupyter-myst-build-proxy](https://github.com/ryanlovett/jupyter-myst-build-proxy/))
 
 
 ### 💪 Exercise B: Build a MyST website _from scratch_ in JupyterLab

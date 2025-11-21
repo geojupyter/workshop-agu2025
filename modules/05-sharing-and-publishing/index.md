@@ -74,6 +74,8 @@ Directives are like functions that can receive Markdown content, for example an
 callout's text. Roles are just like directives, except they are _inline_ with other
 Markdown text.
 
+Let's jump right into a quick example of how this functionality works.
+
 
 #### Example `{glossary}` directive and `{term}` role
 

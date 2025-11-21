@@ -111,13 +111,29 @@ MyST and Jupyter Notebook format).
 
 ## Building a website with MyST
 
-### The normal way
+As workshop participants, you have access to CryoCloud, which provides a JupyterLab
+instance with MyST pre-installed.
+CryoCloud also comes with a special configuration for building a MyST site without the
+use of the terminal.
 
-:::{important}
-Because we're working in CryoCloud for this workshop, this section is provided for
-informational purposes.
-We'll be following the instructions below for using MyST in JupyterLab.
+To preview a MyST site in JupyterLab, view instructions at [](../../reference/04-using-myst.md).
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...when you trigger the build as specified in the instructions linked above, a loading
+screen is displayed.
+
+After a few seconds, the build will complete and you can see your fully-built site!
 :::
+
+:::{note} The normal way
+:class: dropdown
+
+Because we're working in CryoCloud for this workshop, we'll be following the
+instructions above for using MyST in JupyterLab.
+If you're interested to know how to use MyST outside of JupyterLab, read on!
 
 With MySTMD [installed](https://mystmd.org/guide/installing), you can build a MyST
 website from source with one command:
@@ -132,25 +148,6 @@ rebuild your site any time you change its content:
 ```bash
 myst start
 ```
-
-
-### In JupyterLab
-
-As workshop participants, you have access to CryoCloud, which provides a JupyterLab
-instance with MyST pre-installed.
-CryoCloud also comes with a special configuration for building a MyST site without the
-use of the terminal.
-
-To preview a MyST site in JupyterLab, view instructions at [](../../reference/04-using-myst.md).
-
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
-...when you open the URL specified in the instructions above, a loading screen is
-displayed.
-
-After a few seconds, the build will complete and you can see your fully-built site!
 :::
 
 

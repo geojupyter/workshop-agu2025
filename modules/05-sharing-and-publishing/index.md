@@ -78,6 +78,12 @@ Let's jump right into a quick example of how this functionality works.
 
 
 #### Example `{glossary}` directive and `{term}` role
+:::{tip} 💪 Mini-exercise
+:icon: false
+
+Try changing the code for the directive and role in the example below and immediately
+observe the results.
+:::
 
 ```{myst}
 :::{glossary}
@@ -90,12 +96,6 @@ Directives can include **_rich_** Markdown content.
 Try hovering over the word "Term" to see a definition.
 ```
 
-:::{tip} 💪 Mini-exercise
-:icon: false
-
-Try changing the code for the directive and role in the example above and immediately
-observe the results.
-:::
 
 
 ### MySTMD, the software

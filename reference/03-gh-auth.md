@@ -31,3 +31,12 @@ follow the instructions within.**
 
 After you've completed first-time setup, run the code cell at the end of the Notebook
 and carefully follow the instructions output by this cell.
+
+
+## Granting permission for pushing to additional repository
+
+If you only granted access to one repository (recommended), you may want to add more
+later.
+
+You can update the list of repositories you want to grant access to by visiting the
+[configuration page for the CryoCloud GitHub application](https://github.com/apps/cryocloud-github-access).

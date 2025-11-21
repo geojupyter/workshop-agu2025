@@ -2,25 +2,29 @@
 
 ## Previewing your MyST site
 
-### First time
+### Building your site for the first time
 
-To view your built site:
+Every MyST site must have a `myst.yml` config file that defines the project.
 
-* Copy the URL of your server (e.g. Matt's URL is
-  `https://hub.cryointhecloud.com/user/mfisher87/lab`)
-* Open a new browser tab
-* Paste the URL in the URL bar
-* Replace `/lab` with `/myst-build/$DIRECTORY_OF_MYST_PROJECT`; for example, Matt's
-  project is at `~/workshop-open-source-geospatial`, so his URL would be
-  `https://hub.cryointhecloud.com/user/mfisher87/myst-build/workshop-open-source-geospatial`.
+Right-click this file in the file browser and select the first item on the context menu:
+"Build MyST Project".
 
-At this point you should see the build progress in your browser.
-It should only take a few seconds, and then you'll see your fully-built MyST site!
+A new tab will open displaying a loading progress indicator.
+After a few seconds, your site will be built and you'll it displayed in the current tab.
 
 
 ### Subsequent builds
 
-Your site will not automatically rebuild when you make changes!
-This functionality will be available in the future.
+In JupyterLab, your site will **not** automatically rebuild when you make changes!
+This functionality will be available in JupyterLab the future.
 
-Append  `/?rebuild=1` to the URL to trigger a rebuild.
+For now, the JupyterLab infrastructure will magically add a "Rebuild" button to the
+top-right of your site, which you can click to trigger a new build of your site.
+
+Do this every time you make a change to see if it worked correctly!
+
+
+### How this works
+
+This functionality is provided by the extension
+[`jupyter-myst-build-proxy`](https://github.com/ryanlovett/jupyter-myst-build-proxy/).

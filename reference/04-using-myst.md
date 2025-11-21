@@ -24,7 +24,7 @@ top-right of your site, which you can click to trigger a new build of your site.
 Do this every time you make a change to see if it worked correctly!
 
 
-## How this works
+### How this works
 
 This functionality is provided by the extension
 [`jupyter-myst-build-proxy`](https://github.com/ryanlovett/jupyter-myst-build-proxy/).

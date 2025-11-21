@@ -156,8 +156,8 @@ After a few seconds, the build will complete and you can see your fully-built si
 
 ### 💪 Exercise A: Build _this_ MyST website in JupyterLab
 
-_TODO_: Will the participants already have the workshop cloned? Or does that need to be
-a step here?
+_TODO_: Step to clone workshop repo as a drop-down or link to reference page (for
+participants who may come in late and miss these instructions from earlier modules)
 
 
 #### Navigate to the correct directory in the file browser

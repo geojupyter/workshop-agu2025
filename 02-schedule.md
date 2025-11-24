@@ -16,7 +16,7 @@ AGU!
 | 9:25 AM  | 10 minutes | **Break**                                     |              |
 | 9:35 AM  | 60 minutes | [](modules/02-interactive-viz/index.ipynb)    | Qiusheng     |
 | 10:35 AM | 10 minutes | **Break**                                     |              |
-| 10:45 AM | 60 minutes | [](modules/03-integrating-ai/index.md)        | Qiusheng     |
+| 10:45 AM | 60 minutes | [](modules/03-integrating-ai/index.ipynb)        | Qiusheng     |
 | 11:45 AM | 15 minutes | **Q&A**                                       | All          |
 
 ## 🍽️ Lunch! (12:00 - 1:30)

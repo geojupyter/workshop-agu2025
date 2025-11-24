@@ -30,8 +30,8 @@ We may do a group order for food delivery.
 ## 🌇 Afternoon (1:30 - 5:00)
 
 | Time    | Duration   | Topic                                          | Presenter(s)    |
-| ------- | ---------- | ---------------------------------------------- | --------------- |
-| 1:30 PM | 60 minutes | [](modules/04-data-in-the-cloud/index.md)      | Max             |
+| ------- | ---------- | -----------------------------------------------| --------------- |
+| 1:30 PM | 60 minutes | [](modules/04-data-in-the-cloud/index.ipynb)   | Max             |
 | 2:30 PM | 10 minutes | **Break**                                      |                 |
 | 2:40 PM | 60 minutes | [](modules/05-sharing-and-publishing/index.md) | Fernando & Matt |
 | 3:40 PM | 10 minutes | **Break**                                      |                 |

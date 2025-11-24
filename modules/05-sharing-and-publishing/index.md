@@ -207,6 +207,31 @@ At the top-right is a button with the text "Rebuild".
 
 ### 💪 Exercise B: Build a MyST website _from scratch_ in JupyterLab
 
+:::{important} Not covered: _Environment management!_
+:class: dropdown
+
+Environment management is an important part of reproducible research.
+Always include an environment manifest or specification alongside your publication.
+
+This exercise works as shown on CryoCloud because CryoCloud has MySTMD and many other
+dependencies pre-installed.
+When working on your own, you may encounter an error like:
+
+```
+Command 'myst' not found
+```
+
+We highly recommend that you try [pixi](https://pixi.sh/) as a dependency manager:
+it's fast, user-friendly, and makes following best practices easy or automatic.
+
+```bash
+pixi init
+pixi add mystmd
+pixi run myst start
+```
+:::
+
+
 #### Create a new empty GitHub repository
 
 In the GitHub UI, click the `+` icon at the top-right. Select "New repository".

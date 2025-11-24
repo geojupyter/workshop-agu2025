@@ -543,7 +543,7 @@ export:
 Hello, world!
 ```
 
-:::{hint} On quoting in YAML
+:::{hint} On quoting in YAML, a rant
 :class: dropdown
 
 YAML is intended to be a human-friendly data format.

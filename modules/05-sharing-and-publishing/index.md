@@ -479,12 +479,137 @@ MyST enables building a PDF from the same source as you built your website.
 
 Some features are web-specific, however, and won't be rendered in an output PDF.
 
-
+Let's try it out!
 
 
 ### 💪 Exercise C: Render a PDF from the same source as your website
 
-TODO
+#### Attempt to build our current project as PDF
+
+Building PDF(s) from a MyST project requires on command:
+
+```bash
+myst build --pdf
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+This command fails with:
+
+```
+📭 No file exports with kind "pdf" found.
+You may need to add an 'exports' field to the frontmatter of the file(s) you wish to
+export:
+
+---
+exports:
+- format: pdf
+---
+```
+
+This is because we need to tell MyST which pieces of the site should be exportable as
+PDF.
+:::
+
+
+### Configure the frontmatter to allow PDF export
+
+To tell MyST that we want a PDF export for a specific document, we need to define {term}`frontmatter`.
+
+While we're here, let's also set some other metadata like the document's author.
+
+Add to the top of `index.md`:
+
+```{code} Markdown
+:filename: index.md
+:linenos:
+:emphasize-lines: 1-12
+
+---
+authors:
+  - name: "Your name"
+    affiliations:
+      - "Your employer"
+    email: "your-email@example.com"
+    github: "your-github-username"
+    # Optional: Do you have an ORCID?
+    # orcid: "0000-0000-0000-0000"
+export:
+  - "pdf"
+---
+
+Hello, world!
+```
+
+:::{hint} On quoting in YAML
+:class: dropdown
+
+YAML is intended to be a human-friendly data format.
+There are many ways that it excels at this goal, and in other ways, it introduces
+pitfalls that are easy to fall in to.
+
+A single rule will help you avoid many of these pitfalls:
+**_always quote strings in your YAML_**.
+
+**Example: Upgrading the Python version**
+
+```yaml
+requires_python: 3.9
+```
+
+☝️
+Looks good to me, and it works fine. I'll just upgrade that to 3.10...
+
+```yaml
+requires_python: 3.10
+```
+
+🙅
+This value isn't a string, it's a number, so it evaluates to 3.1.
+
+```yaml
+requires_python: "3.10"
+```
+
+✅
+The only way to get the result you want is to quote the string.
+
+**Example: ISO country codes**
+
+```yaml
+country_code: gb
+```
+
+☝️
+Looks good to me, and it works fine. I'll just update my program to process data for
+Norway...
+
+```yaml
+country_code: no
+```
+
+🙅
+This value isn't a string, it's a **boolean**, so it evaluates to `false`.
+
+```yaml
+country_code: "no"
+```
+
+✅
+The only way to get the result you want is to quote the string.
+
+Save yourself the pain:
+**_always defensively quote your YAML strings_**.
+
+There are many more ways YAML can be confusing.
+There are a lot of special rules to remember!
+For more, check out
+[The YAML document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)
+and <https://noyaml.com/>.
+:::
+
 
 #### 🧠 What do we know now?
 

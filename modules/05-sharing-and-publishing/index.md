@@ -77,7 +77,8 @@ Markdown text.
 Let's jump right into a quick example of how this functionality works.
 
 
-#### Example `{glossary}` directive and `{term}` role
+#### Example directive and role
+
 :::{tip} 💪 Mini-exercise
 :icon: false
 
@@ -96,6 +97,11 @@ Directives can include **_rich_** Markdown content.
 Try hovering over the word "Term" to see a definition.
 ```
 
+
+##### 🧠 What do we know now?
+
+The `{glossary}` role enables defining terms, and the `{term}` role enables referencing
+terms.
 
 
 ### MySTMD, the software

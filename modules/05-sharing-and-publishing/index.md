@@ -278,6 +278,8 @@ This command produces the following output:
 Cloning into 'myst-exercise'...
 warning: You appear to have cloned an empty repository.
 ```
+
+The warning is normal!
 :::
 
 

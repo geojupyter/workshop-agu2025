@@ -514,7 +514,7 @@ PDF.
 :::
 
 
-### Configure the frontmatter to allow PDF export
+#### Configure the frontmatter to allow PDF export
 
 To tell MyST that we want a PDF export for a specific document, we need to define {term}`frontmatter`.
 

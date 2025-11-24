@@ -20,8 +20,14 @@ dependencies:
   - "pandas"
   - "scipy"
   - "xarray"
+
+  # Storage
+  - "s3fs"
   - "obstore"
   - "fsspec"
+  - "icechunk"
+  - "virtualizarr"
+  - "h5netcdf"
 
   # geo
   - "gdal"

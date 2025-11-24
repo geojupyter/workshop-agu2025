@@ -381,6 +381,7 @@ Your config file should now look like this:
 
 ```{code} yaml
 :filename: myst.yml
+:linenos:
 :emphasize-lines: 5
 
 # See docs at: https://mystmd.org/guide/frontmatter
@@ -429,6 +430,7 @@ Your config file should now look like this:
 
 ```{code} yaml
 :filename: myst.yml
+:linenos:
 :emphasize-lines: 14
 
 # See docs at: https://mystmd.org/guide/frontmatter
@@ -473,7 +475,11 @@ chose for your logo text) instead of "Made with MyST".
 
 ## Building a PDF with MyST
 
-TODO
+MyST enables building a PDF from the same source as you built your website.
+
+Some features are web-specific, however, and won't be rendered in an output PDF.
+
+
 
 
 ### 💪 Exercise C: Render a PDF from the same source as your website

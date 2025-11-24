@@ -25,6 +25,7 @@ project:
       children:
         - pattern: "for-instructors/*.md"
 
+
 site:
   template: "book-theme"
   actions:

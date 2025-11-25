@@ -617,9 +617,48 @@ and <https://noyaml.com/>.
 :::
 
 
+#### Build the PDF
+
+To build the PDF, try `myst build --pdf` again.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+```
+🖨  Rendering typst pdf to paper.pdf
+```
+:::
+
+Try opening the PDF!
+Double-click `paper.pdf` in the JupyterLab file browser.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+The content is fairly simple.
+There is a title page, a blank table of contents, and then your content on the 3rd page.
+:::
+
+This document was rendered with the `"plain_typst_book"` template.
+Other PDF template options are available!
+
+Try running `myst templates list --typst` to see a list of available templates.
+
+More information is available on the
+[official MyST PDF-building documentation](https://mystmd.org/guide/creating-pdf-documents)
+
+
 #### 🧠 What do we know now?
 
-TODO
+* MyST documents can be built to multiple output formats, including PDFs.
+* Frontmatter is YAML metadata on a Markdown document that can tell MyST which documents
+  should be built as PDF.
+* [Typst](https://typst.app/) can be used as an alternative document engine to
+  $ \LaTeX $ for rendering PDFs by specifying `export.format: "typst"` in the frontmatter.
+* If you opened the collapsed section on quoting YAML, you know the author of this
+  document has been burned too many times. **Quote your strings**! 😁
 
 
 ## Hosting your website for free

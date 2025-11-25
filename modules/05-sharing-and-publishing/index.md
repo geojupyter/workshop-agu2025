@@ -527,7 +527,7 @@ Add to the top of `index.md`:
 ```{code} markdown
 :filename: index.md
 :linenos:
-:emphasize-lines: 1-12
+:emphasize-lines: 1-14
 
 ---
 authors:
@@ -539,7 +539,9 @@ authors:
     # Optional: Do you have an ORCID?
     # orcid: "0000-0000-0000-0000"
 export:
-  - "pdf"
+  - format: "typst"
+    template: "plain_typst_book"
+    output: "paper.pdf"
 ---
 
 # My document title

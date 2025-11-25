@@ -312,6 +312,8 @@ code block):
 ```{code} markdown
 :filename: index.md
 
+# My document title
+
 Hello, world!
 
 $$
@@ -539,6 +541,8 @@ authors:
 export:
   - "pdf"
 ---
+
+# My document title
 
 Hello, world!
 ```

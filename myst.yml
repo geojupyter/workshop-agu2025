@@ -7,6 +7,9 @@ project:
   # authors: []
   license: "MIT"
   github: "https://github.com/geojupyter/workshop-open-source-geospatial"
+  error_rules:
+    - rule: "doi-link-valid"
+      severity: "warn"
   exclude:
     - "_*"
     - "README.md"

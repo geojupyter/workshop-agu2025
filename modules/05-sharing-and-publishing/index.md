@@ -634,6 +634,8 @@ To build the PDF, try `myst build --pdf` again.
 :class: simple
 :icon: false
 
+The command produces the following output at the end:
+
 ```
 🖨  Rendering typst pdf to paper.pdf
 ```

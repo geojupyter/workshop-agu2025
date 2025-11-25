@@ -8,5 +8,3 @@ Frontmatter
   cell of a Jupyter Notebook.
   [Read more in the official MyST frontmatter docs](https://mystmd.org/guide/frontmatter).
 :::
-
-Reference to {term}`Some term <some term>`.

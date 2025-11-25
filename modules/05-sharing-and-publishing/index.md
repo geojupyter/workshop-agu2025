@@ -49,6 +49,14 @@ We'll publish the website and PDF for free on GitHub, and enable automatic gener
 DOIs for our published product.
 :::
 
+:::{note} TODOs
+:class: dropdown
+
+* Step to clone workshop repo as a drop-down or link to reference page (for
+  participants who may come in late and miss these instructions from earlier modules)
+* Add checkpoints to commit and push
+:::
+
 
 ## What is MyST?
 
@@ -159,8 +167,9 @@ myst start
 
 ### 💪 Exercise A: Build _this_ MyST website in JupyterLab
 
-_TODO_: Step to clone workshop repo as a drop-down or link to reference page (for
-participants who may come in late and miss these instructions from earlier modules)
+This workshop's materials are built with MyST.
+We'll build this premade website together on CryoCloud so you can get used to the
+process.
 
 
 #### Navigate to the correct directory in the file browser

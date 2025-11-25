@@ -663,23 +663,144 @@ More information is available on the
 
 ## Hosting your website for free
 
-### GitHub Pages
-
-TODO
-
-
-### ReadTheDocs
-
-TODO
+There are many platforms for hosting a website (and PDF!) for free.
+We'll discuss some common options for open source projects.
 
 
-### 💪 Exercise D: Publish your paper and website to GitHub
+### [GitHub Pages](https://docs.github.com/en/pages)
 
-TODO
+GitHub Pages is, as it sounds, a GitHub-native solution for hosting web pages.
+It doesn't offer any advanced features, it only enables building a website from a GitHub
+repository.
+
+Pages are built using [GitHub Actions](https://github.com/features/actions).
+
+
+### [ReadTheDocs](https://about.readthedocs.com/)
+
+ReadTheDocs is a community service for building and hosting webpages, most commonly
+software documentation.
+It provides advanced functionality like website previews for Pull Requests,
+multi-language builds, and multi-version builds.
+
+It uses
+[its own unique file format](https://docs.readthedocs.com/platform/stable/config-file/v2.html)
+for specifying build processes.
+
+
+### 💪 Exercise D: Publish your paper and website to GitHub Pages
+
+We're going to use GitHub Pages because it's more straightforward to configure.
+We recommend trying out ReadTheDocs if you need more advanced features!
+
+
+#### Update repository's GitHub Pages settings
+
+* Open your repository URL in your browser
+* Click the "Settings" tab towards the top
+* Select "Pages" from the left menu
+* Change the "Source" dropdown to "GitHub Actions"
+
+
+#### Add GitHub Actions configuration file
+
+Now that we've set up our repository to build our website using GitHub Actions,
+we need to define the build process in a configuration file.
+
+MyST can do this automatically!
+In the terminal, from your `myst-exercise` project directory:
+
+```bash
+myst init --gh-pages
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+This will create a new file (and its parent directories) at
+`.github/workflows/deploy.yml`.
+
+**You may need to show hidden files so you can see the `.github` directory in the file
+browser.
+Select View > Show hidden files** from the menu.
+:::
+
+
+#### View the action results
+
+After committing and pushing the GitHub Actions configuration file in the previous step,
+we can view the build that was triggered.
+
+Visit your repository URL in GitHub.
+Click the "Actions" tab at the top.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+There is 1 workflow run, ideally with a green checkmark.
+:::
+
+Click on the workflow run shown on this page.
+If it succeeded, you should see a node named "deploy" displayed on the page:
+
+![](./github-actions-deploy-successful.jpg)
+
+Click the link in the "deploy" node to view your built website.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+Your webpage displays on the public Internet!
+
+At the top-right of this page, there's a "download" icon that looks a bit like this:
+
+📥
+
+When you click that icon, you're presented with an option to download your document as a
+PDF.
+
+When you download your PDF, it looks exactly like the PDF you built manually earlier!
+:::
+
+If your deploy failed, click the "deploy" node to view the error logs.
+See if you can solve the error on your own, and let an instructor know if you need help!
+
+
+#### Display your GitHub Pages URL on your repository homepage
+
+GitHub offers a convenience feature to enable you to view your GitHub Pages URL on the
+homepage of your GitHub repo.
+
+Visit the URL for your GitHub repo homepage.
+Towards the top-right, click the cog/gear icon (⚙️).
+
+![](./github-repo-about-cog.jpg)
+
+Finally, check the "Use your GitHub Pages website" checkbox, and then click "Save
+changes".
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+Your GitHub Pages URL is visible near the cog/gear icon.
+Click the link to immediately open your website.
+:::
+
 
 #### 🧠 What do we know now?
 
-TODO
+* GitHub repositories need some initial setup in the web interface to publish a MyST
+  site built in GitHub Actions.
+* MyST can do most of the work of configuring GitHub Actions deployments for us with a
+  single command: `myst init --gh-pages`.
+* We can see deployment progress and results in the GitHub repository's "Actions" tab.
+* MyST will automatically build PDFs when building a website, and generate a download
+  link on the relevant page.
+* A GitHub repository can display a convenient link to the related GitHub Pages website.
 
 
 ## Getting a DOI

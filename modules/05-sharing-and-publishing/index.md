@@ -816,13 +816,260 @@ Click the link to immediately open your website.
 
 ## Getting a DOI
 
-TODO
+A {term}`DOI` can uniquely identify and track your research products, enabling easy
+citing and tracking of citations.
+DOIs can even be versioned, enabling citations to reference a research product at a
+specific point in time.
+
+DOIs can be associated with your unique academic identity through the use of
+an {term}`ORCID`.
+
+:::{important}
+A DOI and ORCID can help defend your work against {term}`scooping` by providing
+verifiable {term}`provenance` for your work, making it clear that your work came first.
+
+They can also enable credit for the work to be more equitably distributed by crediting
+all forms of contributions.
+:::
+
+We can automate the production of DOIs with GitHub and [Zenodo](https://zenodo.org/) (a
+**free** DOI registrar developed and operated by [CERN](https://home.cern/)).
 
 
 ### 💪 Exercise E: Get a DOI for your published content on GitHub
 
-TODO
+#### Create an ORCID
+
+Visit the [ORCID registration page](https://orcid.org/register) and create an account.
+
+Enter your **personal email** as your primary email.
+Be sure to also enter your institutional email as an additional email.
+You can more emails after you register.
+
+
+#### Sign up for Zenodo
+
+Visit the [Zenodo signup page](https://zenodo.org/signup/) and sign up with either your
+GitHub account or ORCID.
+We recommend using GitHub, as you'll need to link your GitHub account either way.
+
+
+##### Link your GitHub account
+
+If you didn't signup with GitHub, you'll need to link your GitHub account.
+
+After you've signed in, click the username dropdown at the top-right of the Zenodo
+interface.
+
+On the left panel, select "Linked accounts".
+
+On the GitHub row, click "Connect".
+You may be prompted to log in, then you'll be prompted to accept some dialogs.
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+Back in the Zenodo "Linked accounts" screen, a green checkmark will be
+displayed next to GitHub.
+:::
+
+
+
+#### Enable auto-DOI for your repository on Zenodo
+
+After you've signed in to Zenodo, click the username dropdown at the top-right of the
+Zenodo interface.
+
+On the left panel, select "GitHub".
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...there is a large "Get started" display with a 3-step process you can follow to enable auto-DOI for a
+repository.
+
+At the top right of this "Get started" box, there is a "Sync now" button.
+:::
+
+Click "Sync now".
+It may take a moment to complete the sync.
+
+:::{hint} Help, I received a `504` error!
+:class: dropdown
+
+If you receive a `504` error,
+[this is common for users with large numbers of public repositories](https://github.com/zenodo/zenodo-rdm/issues/1118).
+Wait a few minutes and refresh the page; eventually your repository list will be updated
+:::
+
+Find your repository in the list and flip the switch for that repository
+to "ON".
+
+![](./zenodo-repository-enable.jpg)
+
+
+#### Create `CITATION.cff`
+
+A `CITATION.cff` file is the project metadata that enables Zenodo to populate a DOI.
+
+MyST can generate a `CITATION.cff` for you!
+But it needs to be told which documents to use to populate this metadata.
+
+Edit `index.md` to add another export format of `"cff"`:
+
+```{code} markdown
+:filename: index.md
+:linenos:
+:emphasize-lines: 14
+
+---
+authors:
+  - name: "Matt Fisher"
+    affiliations:
+      - "Schmidt Center for Data Science & Environment"
+      - "University of California, Berkeley"
+    email: "matt.fisher@berkeley.edu"
+    github: "mfisher87"
+    orcid: "0000-0003-3260-5445"
+export:
+  - format: "typst"
+    template: "plain_typst_book"
+    output: "paper.pdf"
+  - format: "cff"
+---
+
+# My document title
+```
+
+Now we can build our `CITATION.cff` file with the command:
+
+```bash
+myst build --cff
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...the following output:
+
+```
+📑 Exported CFF in 37 ms, copying to CITATION.cff
+```
+:::
+
+As your project grows and changes, you can regenerate this file by repeating
+that command.
+
+You can also edit your citation file by hand -- it's in the YAML format, which may be
+familiar to you now!
+Check out the
+[full CFF specification](https://citation-file-format.github.io/assets/pdf/cff-specifications-1.0.0.pdf)
+to see what kind of information you can populate!
+
+
+#### Create a GitHub release
+
+Zenodo creates DOIs **only** when you create releases in GitHub.
+
+Visit the URL for your GitHub repository's homepage.
+
+Click the "Create a new release" button on the right sidebar.
+
+![](./github-create-a-release.jpg)
+
+Click the "Tag" dropdown and click "Create new tag".
+We'll use tags to create an ascending numerical sequence for our releases.
+For simplicity, let's enter the date in `YYYY.MM.DD` format, e.g. `2025.12.18`.
+
+:::{hint} Versioning schemes
+:class: dropdown
+
+There are many
+[versioning schemes](https://nesbitt.io/2024/06/24/from-zerover-to-semver-a-comprehensive-list-of-versioning-schemes-in-open-source.html)
+to choose from.
+The one we suggested above is called ["CalVer"](https://calver.org/) or "calendar versioning".
+
+You may want to try an extremely common versioning scheme called
+["SemVer"](https://semver.org/) or "semantic versioning" enables embedding
+information about the implications of upgrading to any given version in the
+version number itself.
+:::
+
+Give your release the title "Initial release".
+
+You don't need to enter anything in the "Release notes" field, but we recommend
+using the "Generate release notes" button as a starting place.
+
+:::{hint} "Generate release notes" only generates one line of text!
+:class: dropdown
+
+This feature uses
+[GitHub Pull Requests (PRs)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+to generate a list of changes.
+If you don't use PRs, you will only see a "Changelog" link, this is normal.
+:::
+
+Finally, **click "Publish release"**.
+
+Zenodo will automatically generate your DOI now.
+
+
+#### Add a badge to your README
+
+Zenodo also automatically generates a beautiful DOI "badge" you can display on
+your repository's README or anywhere else on the web.
+
+To use the badge, click the username dropdown at the top-right of the Zenodo
+interface, and select "GitHub".
+
+Locate your repository on the list of enabled repositories and click on the
+blue DOI badge:
+
+![](./zenodo-doi-badge.jpg)
+
+Copy the "Markdown" code and paste it into a new `README.md` file in your repository:
+
+```{code} markdown
+:filename: README.md
+:linenos:
+:emphasize-lines: 1
+
+[![DOI](https://zenodo.org/badge/1100194185.svg)](https://doi.org/10.5281/zenodo.17716242)
+
+# My exercise from the AGU workshop "Open Source Geospatial Workflows in the Cloud"
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...your repository homepage renders your `README.md` file with a pretty blue badge at the top 🤩
+
+Clicking the badge takes you to the Zenodo homepage for your DOI.
+From here, you can generate citations in a variety of formats or download your archived repository as a Zip file.
+:::
+
+:::{hint} Writing a useful README
+:class: dropdown
+
+The README is the first thing that a user sees when they interact with your repository.
+
+Check out
+[The Turing Way's README guide](https://book.the-turing-way.org/project-design/pd-overview/project-repo/project-repo-readme/)
+for some thoughts that may help you make your README more useful.
+:::
 
 #### 🧠 What do we know now?
 
 TODO
+
+
+## 🎉 Congratulations, you're done!
+
+Great job finishing this module.
+If you'd like continued support in applying these skills to your work, please join the
+[MyST community on Discord](https://discord.mystmd.org/) and/or ask questions in the
+[CryoCloud Slack](https://book.cryointhecloud.com/index-3#slack-account)!

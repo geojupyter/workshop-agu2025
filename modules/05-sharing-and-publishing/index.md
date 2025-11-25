@@ -656,7 +656,7 @@ Other PDF template options are available!
 Try running `myst templates list --typst` to see a list of available templates.
 
 More information is available on the
-[official MyST PDF-building documentation](https://mystmd.org/guide/creating-pdf-documents)
+[official MyST PDF-building documentation](https://mystmd.org/guide/creating-pdf-documents).
 
 
 #### 🧠 What do we know now?

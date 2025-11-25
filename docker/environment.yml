@@ -39,7 +39,7 @@ dependencies:
   - "maplibre"
 
   # Publishing
-  - "mystmd"
+  - "mystmd >=1.6.6"
   - "typst"
   - "jupyter-myst-build-proxy >=0.5.1"
 

@@ -524,7 +524,7 @@ While we're here, let's also set some other metadata like the document's author.
 
 Add to the top of `index.md`:
 
-```{code} Markdown
+```{code} markdown
 :filename: index.md
 :linenos:
 :emphasize-lines: 1-12

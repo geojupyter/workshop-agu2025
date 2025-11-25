@@ -281,7 +281,7 @@ git clone <YOUR_REPOSITORY_HTTPS_URL_HERE>
 :class: simple
 :icon: false
 
-This command produces the following output:
+...this command produces the following output:
 
 ```
 Cloning into 'myst-exercise'...
@@ -507,7 +507,7 @@ myst build --pdf
 :class: simple
 :icon: false
 
-This command fails with:
+...this command fails with:
 
 ```
 📭 No file exports with kind "pdf" found.
@@ -634,7 +634,7 @@ To build the PDF, try `myst build --pdf` again.
 :class: simple
 :icon: false
 
-The command produces the following output at the end:
+...this command produces the following output at the end:
 
 ```
 🖨  Rendering typst pdf to paper.pdf
@@ -648,7 +648,7 @@ Double-click `paper.pdf` in the JupyterLab file browser.
 :class: simple
 :icon: false
 
-The content is fairly simple.
+...the content is fairly simple.
 There is a title page, a blank table of contents, and then your content on the 3rd page.
 :::
 
@@ -729,7 +729,7 @@ myst init --gh-pages
 :class: simple
 :icon: false
 
-This will create a new file (and its parent directories) at
+...this created a new file (and its parent directories) at
 `.github/workflows/deploy.yml`.
 
 **You may need to show hidden files so you can see the `.github` directory in the file
@@ -750,7 +750,7 @@ Click the "Actions" tab at the top.
 :class: simple
 :icon: false
 
-There is 1 workflow run, ideally with a green checkmark.
+...there is 1 workflow run listed, ideally with a green checkmark.
 :::
 
 Click on the workflow run shown on this page.
@@ -764,7 +764,7 @@ Click the link in the "deploy" node to view your built website.
 :class: simple
 :icon: false
 
-Your webpage displays on the public Internet!
+...your webpage displays on the public Internet!
 
 At the top-right of this page, there's a "download" icon that looks a bit like this:
 
@@ -797,7 +797,7 @@ changes".
 :class: simple
 :icon: false
 
-Your GitHub Pages URL is visible near the cog/gear icon.
+...your GitHub Pages URL is visible near the cog/gear icon.
 Click the link to immediately open your website.
 :::
 

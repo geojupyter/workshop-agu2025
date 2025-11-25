@@ -816,7 +816,24 @@ Click the link to immediately open your website.
 
 ## Getting a DOI
 
-TODO
+A {term}`DOI` can uniquely identify and track your research products, enabling easy
+citing and tracking of citations.
+DOIs can even be versioned, enabling citations to reference a research product at a
+specific point in time.
+
+DOIs can be associated with your unique academic identity through the use of
+an {term}`ORCID`.
+
+:::{important}
+A DOI and ORCID can help defend your work against {term}`scooping` by providing
+verifiable {term}`provenance` for your work, making it clear that your work came first.
+
+They can also enable credit for the work to be more equitably distributed by crediting
+all forms of contributions.
+:::
+
+We can automate the production of DOIs with GitHub and [Zenodo](https://zenodo.org/) (a
+**free** DOI registrar developed and operated by [CERN](https://home.cern/)).
 
 
 ### 💪 Exercise E: Get a DOI for your published content on GitHub

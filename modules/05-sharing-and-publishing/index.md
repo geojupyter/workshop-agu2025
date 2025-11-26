@@ -130,7 +130,7 @@ use of the terminal.
 
 To preview a MyST site in JupyterLab, view instructions at [](../../reference/04-using-myst.md).
 
-:::{note} The normal way
+:::{note} The normal way (without JupyterLab)
 :class: dropdown
 
 Because we're working in CryoCloud for this workshop, we'll be following the

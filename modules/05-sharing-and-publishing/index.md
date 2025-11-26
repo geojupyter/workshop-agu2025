@@ -49,12 +49,6 @@ We'll publish the website and PDF for free on GitHub, and enable automatic gener
 DOIs for our published product.
 :::
 
-:::{note} TODOs
-:class: dropdown
-
-* Add checkpoints to commit and push
-:::
-
 
 ## What is MyST?
 
@@ -161,6 +155,8 @@ process.
 
 ::::::{hint} Joining late? You may need to clone the workshop repository
 :class: dropdown
+
+Foo!
 
 If you're joining late, you may have missed a prior instruction to clone the workshop
 website and set up GitHub authentication.
@@ -440,7 +436,7 @@ site:
 
 #### 🧪 Rebuild your site
 
-**Save and rebuild your site.**
+Save and rebuild your site.
 
 :::{important} 👀 You should notice...
 :class: simple
@@ -492,7 +488,7 @@ site:
 
 #### 🧪 Rebuild your site
 
-**Save and rebuild your site.**
+Save and rebuild your site.
 
 :::{important} 👀 You should notice...
 :class: simple
@@ -500,6 +496,9 @@ site:
 
 ...the text near at the very top-left of your site now says "My logo text" (or whatever you
 chose for your logo text) instead of "Made with MyST".
+:::
+
+:::{gitCommitCheckpoint} Initialize MyST site
 :::
 
 
@@ -682,6 +681,12 @@ Double-click `paper.pdf` in the JupyterLab file browser.
 There is a title page, a blank table of contents, and then your content on the 3rd page.
 :::
 
+:::{gitCommitCheckpoint} Add PDF export
+:::
+
+:::{note} Other PDF templates
+:class: dropdown
+
 This document was rendered with the `"plain_typst_book"` template.
 Other PDF template options are available!
 
@@ -689,6 +694,7 @@ Try running `myst templates list --typst` to see a list of available templates.
 
 More information is available on the
 [official MyST PDF-building documentation](https://mystmd.org/guide/creating-pdf-documents).
+:::
 
 
 #### 🧠 What do we know now?
@@ -765,6 +771,9 @@ myst init --gh-pages
 **You may need to show hidden files so you can see the `.github` directory in the file
 browser.
 Select View > Show hidden files** from the menu.
+:::
+
+:::{gitCommitCheckpoint} Set up publish with GitHub Actions
 :::
 
 
@@ -987,6 +996,9 @@ myst build --cff
 ```
 📑 Exported CFF in 37 ms, copying to CITATION.cff
 ```
+:::
+
+:::{gitCommitCheckpoint} Add CITATION.cff for Zenodo DOI
 :::
 
 As your project grows and changes, you can regenerate this file by repeating

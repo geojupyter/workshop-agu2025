@@ -212,7 +212,7 @@ file named `myst.yml`.
 
 #### Build the MyST website
 
-Location the MyST project configuration file, `myst.yml`, in the file browser.
+Locate the MyST project configuration file, `myst.yml`, in the file browser.
 
 Right click this file and select the top option from the menu: "Build MyST Project".
 

@@ -356,7 +356,7 @@ $$
 The `$$` symbols delimit a math equation, and you can write any $ \LaTeX $ within.
 
 
-#### Build your site
+#### 🧪 Build your site
 
 Right-click the `myst.yml` file in the file browser, and select "Build MyST Project".
 
@@ -375,7 +375,7 @@ At the top-right, there is a "Rebuild" button.
 :::
 
 
-#### Try some other MyST features and rebuild
+#### Try some other MyST features
 
 :::{important}
 **Keep the tab displaying your website open!**
@@ -399,10 +399,13 @@ MyST offers many useful features for technical publishing, including
 
 Try out some of these features in your MyST site.
 
+
+#### 🧪 Rebuild your site
+
 **Each time you make changes, rebuild the site by clicking "Rebuild" at the top-right of
 the site.**
 
-Make changes, rebuild, and view the result as many time as you need!
+Make changes, rebuild, and view the result as many time as you want!
 
 
 #### Give your site a title
@@ -434,6 +437,8 @@ site:
   #   favicon: favicon.ico
   #   logo: site_logo.png
 ```
+
+#### 🧪 Rebuild your site
 
 **Save and rebuild your site.**
 
@@ -484,6 +489,8 @@ site:
   #   favicon: favicon.ico
   #   logo: site_logo.png
 ```
+
+#### 🧪 Rebuild your site
 
 **Save and rebuild your site.**
 
@@ -649,7 +656,7 @@ and <https://noyaml.com/>.
 :::
 
 
-#### Build the PDF
+#### 🧪 Build the PDF
 
 To build the PDF, try `myst build --pdf` again.
 
@@ -761,7 +768,7 @@ Select View > Show hidden files** from the menu.
 :::
 
 
-#### View the action results
+#### 🧪 View the action results
 
 After committing and pushing the GitHub Actions configuration file in the previous step,
 we can view the build that was triggered.

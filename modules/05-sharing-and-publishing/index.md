@@ -132,16 +132,6 @@ use of the terminal.
 
 To preview a MyST site in JupyterLab, view instructions at [](../../reference/04-using-myst.md).
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
-...when you trigger the build as specified in the instructions linked above, a loading
-screen is displayed.
-
-After a few seconds, the build will complete and you can see your fully-built site!
-:::
-
 :::{note} The normal way
 :class: dropdown
 

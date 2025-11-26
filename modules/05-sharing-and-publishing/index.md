@@ -52,8 +52,6 @@ DOIs for our published product.
 :::{note} TODOs
 :class: dropdown
 
-* Step to clone workshop repo as a drop-down or link to reference page (for
-  participants who may come in late and miss these instructions from earlier modules)
 * Add checkpoints to commit and push
 :::
 
@@ -160,6 +158,41 @@ myst start
 This workshop's materials are built with MyST.
 We'll build this premade website together on CryoCloud so you can get used to the
 process.
+
+::::::{hint} Joining late? You may need to clone the workshop repository
+:class: dropdown
+
+If you're joining late, you may have missed a prior instruction to clone the workshop
+website.
+
+Open a terminal in your CryoCloud JupyterLab server:
+
+```bash
+cd  # Move to your home directory
+git clone https://github.com/geojupyter/workshop-open-source-geospatial.git
+```
+
+:::{important} 👀 You should notice...
+:class: simple
+:icon: false
+
+...this command produces output like:
+
+```
+Cloning into 'workshop-open-source-geospatial'...
+remote: Enumerating objects: 417, done.
+remote: Counting objects: 100% (178/178), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 417 (delta 136), reused 97 (delta 77), pack-reused 239 (from 2)
+Receiving objects: 100% (417/417), 1.13 MiB | 7.21 MiB/s, done.
+Resolving deltas: 100% (229/229), done.
+```
+:::
+
+It's also critical that you set up authentication.
+You'll need this to push to GitHub, which is required in this module.
+Please follow the instructions at [](../../reference/03-gh-auth.md).
+::::::
 
 
 #### Navigate to the correct directory in the file browser

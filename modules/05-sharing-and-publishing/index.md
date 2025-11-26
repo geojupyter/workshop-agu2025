@@ -163,7 +163,7 @@ process.
 :class: dropdown
 
 If you're joining late, you may have missed a prior instruction to clone the workshop
-website.
+website and set up GitHub authentication.
 
 Open a terminal in your CryoCloud JupyterLab server:
 
@@ -189,8 +189,8 @@ Resolving deltas: 100% (229/229), done.
 ```
 :::
 
-It's also critical that you set up authentication.
-You'll need this to push to GitHub, which is required in this module.
+**You'll need to setup GitHub authentication to push to GitHub**, which is required to
+complete this module.
 Please follow the instructions at [](../../reference/03-gh-auth.md).
 ::::::
 

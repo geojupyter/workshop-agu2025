@@ -527,7 +527,7 @@ Let's try it out!
 
 #### Attempt to build our current project as PDF
 
-Building PDF(s) from a MyST project requires on command:
+Building PDF(s) from a MyST project requires one command in the terminal:
 
 ```bash
 myst build --pdf
@@ -903,7 +903,6 @@ You may be prompted to log in, then you'll be prompted to accept some dialogs.
 Back in the Zenodo "Linked accounts" screen, a green checkmark will be
 displayed next to GitHub.
 :::
-
 
 
 #### Enable auto-DOI for your repository on Zenodo

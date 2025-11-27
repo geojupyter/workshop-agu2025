@@ -445,7 +445,7 @@ Your config file should now look like this:
 ```{code} yaml
 :filename: myst.yml
 :linenos:
-:emphasize-lines: 14
+:emphasize-lines: 13-14
 
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1

@@ -1048,7 +1048,15 @@ for some thoughts that may help you make your README more useful.
 
 #### 🧠 What do we know now?
 
-TODO
+* An {term}`ORCID` uniquely identifies ourselves
+* A {term}`DOI` uniquely identifies our publication
+* A DOI can be associated with an ORCID
+* A DOI can help protect us against scooping and more accurately and fairly reflect all
+  contributions to the work
+* Zenodo can "auto-DOI" a GitHub repository
+    * DOIs are automatically generated from GitHub Releases
+    * DOIs can be updated over time with changes by creating new GitHub Releases
+* We can display our DOI in GitHub with Markdown in our README
 
 
 ## 🎉 Congratulations, you're done!

@@ -31,9 +31,7 @@ const gitCommitDirective = {
 const youShouldNoticeDirective = {
   name: 'youShouldNotice',
   doc: 'Renders a consistent callout when the learner should notice something.',
-  body: {
-    type: 'myst',
-  },
+  body: {type: 'myst'},
   run(data) {
     return [{
       type: 'admonition',
@@ -57,9 +55,7 @@ const youShouldNoticeDirective = {
 const mystDemoStatic = {
   name: 'myst:static',
   doc: 'A static/pre-rendered version of the `{myst}` directive which supports plugins.',
-  body: {
-    type: 'myst',
-  },
+  body: {type: 'myst'},
   run(data) {
     return [
       {

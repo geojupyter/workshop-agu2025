@@ -27,13 +27,42 @@ const gitCommitDirective = {
           },
         ],
       }],
-    }]
+    }];
+  },
+};
+
+const youShouldNoticeDirective = {
+  name: "youShouldNotice",
+  doc: "Renders a consistent callout when the learner should notice something.",
+  body: {
+    type: String
+  },
+  run(data, _, ctx) {
+    return [{
+      type: "block",
+      children: [{
+        type: "admonition",
+        kind: "important",
+        icon: false,
+        class: "simple",
+        children: [
+          {
+            type: "admonitionTitle",
+            children: [{
+              type: "text",
+              value: "👀 You should notice...",
+            }],
+          },
+          ctx.parseMyst(data.body),
+        ],
+      }],
+    }];
   },
 };
 
 const plugin = {
   name: "Our custom functionality",
   doc: "Custom functionality for this workshop website",
-  directives: [gitCommitDirective],
+  directives: [gitCommitDirective, youShouldNoticeDirective],
 }
 export default plugin;

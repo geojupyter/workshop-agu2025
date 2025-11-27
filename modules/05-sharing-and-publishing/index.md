@@ -168,10 +168,7 @@ cd  # Move to your home directory
 git clone https://github.com/geojupyter/workshop-open-source-geospatial.git
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...this command produces output like:
 
 ```
@@ -197,10 +194,7 @@ On the left panel, ensure the JupyterLab file browser tab (📁 icon) is selecte
 
 Double click the folder in the file browser named `workshop-open-source-geospatial`.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...a listing of around a dozen files and directories, including Markdown files and a
 file named `myst.yml`.
 :::
@@ -212,10 +206,7 @@ Locate the MyST project configuration file, `myst.yml`, in the file browser.
 
 Right click this file and select the top option from the menu: "Build MyST Project".
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...a new browser tab opens with a loading spinner and the title "Building MyST Site".
 
 After around 5 seconds, the build will complete and the website content will display
@@ -270,10 +261,7 @@ Select your username as the owner, and enter `myst-exercise` as the repository n
 
 Leave everything else as default, and click "Create repository".
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...GitHub shows you a page for your new, empty repository.
 
 A "Quick setup" section includes a URL you can copy.
@@ -296,10 +284,7 @@ cd
 git clone <YOUR_REPOSITORY_HTTPS_URL_HERE>
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...this command produces the following output:
 
 ```
@@ -356,10 +341,7 @@ The `$$` symbols delimit a math equation, and you can write any $ \LaTeX $ withi
 
 Right-click the `myst.yml` file in the file browser, and select "Build MyST Project".
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...like last time, a new browser tab opens showing a loading spinner while your site
 builds.
 
@@ -438,10 +420,7 @@ site:
 
 Save and rebuild your site.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...the text near the top-left of your site now says "My site" (or whatever you
 chose for your title) instead of "index".
 
@@ -490,10 +469,7 @@ site:
 
 Save and rebuild your site.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...the text near at the very top-left of your site now says "My logo text" (or whatever you
 chose for your logo text) instead of "Made with MyST".
 :::
@@ -532,10 +508,7 @@ Building PDF(s) from a MyST project requires one command in the terminal:
 myst build --pdf
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...this command fails with:
 
 ```
@@ -659,10 +632,7 @@ and <https://noyaml.com/>.
 
 To build the PDF, try `myst build --pdf` again.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...this command produces the following output at the end:
 
 ```
@@ -673,10 +643,7 @@ To build the PDF, try `myst build --pdf` again.
 Try opening the PDF!
 Double-click `paper.pdf` in the JupyterLab file browser.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...the content is fairly simple.
 There is a title page, a blank table of contents, and then your content on the 3rd page.
 :::
@@ -761,10 +728,7 @@ In the terminal, from your `myst-exercise` project directory:
 myst init --gh-pages
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...this created a new file (and its parent directories) at
 `.github/workflows/deploy.yml`.
 
@@ -785,10 +749,7 @@ we can view the build that was triggered.
 Visit your repository URL in GitHub.
 Click the "Actions" tab at the top.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...there is 1 workflow run listed, ideally with a green checkmark.
 :::
 
@@ -799,10 +760,7 @@ If it succeeded, you should see a node named "deploy" displayed on the page:
 
 Click the link in the "deploy" node to view your built website.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...your webpage displays on the public Internet!
 
 At the top-right of this page, there's a "download" icon that looks a bit like this:
@@ -832,10 +790,7 @@ Towards the top-right, click the cog/gear icon (⚙️).
 Finally, check the "Use your GitHub Pages website" checkbox, and then click "Save
 changes".
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...your GitHub Pages URL is visible near the cog/gear icon.
 Click the link to immediately open your website.
 :::
@@ -905,10 +860,7 @@ On the left panel, select "Linked accounts".
 On the GitHub row, click "Connect".
 You may be prompted to log in, then you'll be prompted to accept some dialogs.
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 Back in the Zenodo "Linked accounts" screen, a green checkmark will be
 displayed next to GitHub.
 :::
@@ -921,10 +873,7 @@ Zenodo interface.
 
 On the left panel, select "GitHub".
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...there is a large "Get started" display with a 3-step process you can follow to enable auto-DOI for a
 repository.
 
@@ -987,10 +936,7 @@ Now we can build our `CITATION.cff` file with the command:
 myst build --cff
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...the following output:
 
 ```
@@ -1083,10 +1029,7 @@ Copy the "Markdown" code and paste it into a new `README.md` file in your reposi
 # My exercise from the AGU workshop "Open Source Geospatial Workflows in the Cloud"
 ```
 
-:::{important} 👀 You should notice...
-:class: simple
-:icon: false
-
+:::{youShouldNotice}
 ...your repository homepage renders your `README.md` file with a pretty blue badge at the top 🤩
 
 Clicking the badge takes you to the Zenodo homepage for your DOI.

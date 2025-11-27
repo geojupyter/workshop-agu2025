@@ -7,26 +7,23 @@ const gitCommitDirective = {
   },
   run(data) {
     return [{
-      type: "block",
-      children: [{
-        type: "admonition",
-        kind: "important",
-        icon: false,
-        children: [
-          {
-            type: "admonitionTitle",
-            children: [{
-              type: "text",
-              value: "💾 Commit & push to GitHub",
-            }],
-          },
-          {
-            type: "code",
-            lang: "bash",
-            value: `git add .\ngit commit -m "${data.arg}"\ngit push -u origin main`,
-          },
-        ],
-      }],
+      type: "admonition",
+      kind: "important",
+      icon: false,
+      children: [
+        {
+          type: "admonitionTitle",
+          children: [{
+            type: "text",
+            value: "💾 Commit & push to GitHub",
+          }],
+        },
+        {
+          type: "code",
+          lang: "bash",
+          value: `git add .\ngit commit -m "${data.arg}"\ngit push -u origin main`,
+        },
+      ],
     }];
   },
 };
@@ -39,23 +36,20 @@ const youShouldNoticeDirective = {
   },
   run(data, _, ctx) {
     return [{
-      type: "block",
-      children: [{
-        type: "admonition",
-        kind: "important",
-        icon: false,
-        class: "simple",
-        children: [
-          {
-            type: "admonitionTitle",
-            children: [{
-              type: "text",
-              value: "👀 You should notice...",
-            }],
-          },
-          ctx.parseMyst(data.body),
-        ],
-      }],
+      type: "admonition",
+      kind: "important",
+      icon: false,
+      class: "simple",
+      children: [
+        {
+          type: "admonitionTitle",
+          children: [{
+            type: "text",
+            value: "👀 You should notice...",
+          }],
+        },
+        ctx.parseMyst(data.body),
+      ],
     }];
   },
 };

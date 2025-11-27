@@ -209,6 +209,30 @@ E.g.:
 :::
 ```
 
+**As a shortcut, you can use the `{youShouldNotice}` directive.**
+See [](./helpers.md).
+
+
+#### Committing
+
+Use 💾 in a callout to indicate that the user should stop and do a commit now.
+Provide the full set of commands the user should run.
+
+``````{myst}
+:::{important} 💾 Commit & push to GitHub
+:icon: false
+
+```bash
+git add .
+git commit -m "Commit message"
+git push -u origin main
+```
+:::
+``````
+
+**As a shortcut, you can use the `{gitCommitCheckpoint}` directive.**
+See [](./helpers.md).
+
 
 ### Voice / language
 

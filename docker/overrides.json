@@ -1,0 +1,8 @@
+{
+  "@jupyterlab/notebook-extension:tracker": {
+    "scrollPastEnd": false
+  },
+  "@jupyterlab/apputils-extension:notification": {
+    "fetchNews": "false"
+  }
+}

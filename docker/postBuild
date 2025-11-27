@@ -7,3 +7,7 @@ set -euo pipefail
 # used in the JupyterHub.
 cp custom_jupyter_server_config.json ${NB_PYTHON_PREFIX}/etc/jupyter/jupyter_server_config.d/
 cp custom_jupyter_server_config.json ${NB_PYTHON_PREFIX}/etc/jupyter/jupyter_notebook_config.d/
+
+# Install settings overrides, including fix for jumping-scroll behavior
+mkdir -p ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
+cp overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings

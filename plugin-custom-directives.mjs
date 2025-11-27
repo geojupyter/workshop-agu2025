@@ -32,9 +32,9 @@ const youShouldNoticeDirective = {
   name: "youShouldNotice",
   doc: "Renders a consistent callout when the learner should notice something.",
   body: {
-    type: String
+    type: 'myst',
   },
-  run(data, _, ctx) {
+  run(data) {
     return [{
       type: "admonition",
       kind: "important",
@@ -48,7 +48,7 @@ const youShouldNoticeDirective = {
             value: "👀 You should notice...",
           }],
         },
-        ctx.parseMyst(data.body),
+        ...data.body,
       ],
     }];
   },

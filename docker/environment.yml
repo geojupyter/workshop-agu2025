@@ -21,6 +21,14 @@ dependencies:
   - "scipy"
   - "xarray"
 
+  # Storage
+  - "s3fs"
+  - "obstore"
+  - "fsspec"
+  - "icechunk"
+  - "virtualizarr"
+  - "h5netcdf"
+
   # geo
   - "gdal"
   - "geopandas"
@@ -53,3 +61,7 @@ dependencies:
 
   # Infrastructure
   - "jupyter-server-proxy"  # Enable proxying MyST sites built from CLI, accessed at `$PREFIX/proxy/$PORT`
+
+  - "pip"
+  - pip:  # Stuff not yet on conda forge
+    - "obspec-utils"

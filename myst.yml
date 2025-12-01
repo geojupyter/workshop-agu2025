@@ -7,6 +7,11 @@ project:
   # authors: []
   license: "MIT"
   github: "https://github.com/geojupyter/workshop-open-source-geospatial"
+  plugins:
+    - "plugin-custom-directives.mjs"
+  error_rules:
+    - rule: "doi-link-valid"
+      severity: "warn"
   exclude:
     - "_*"
     - "README.md"

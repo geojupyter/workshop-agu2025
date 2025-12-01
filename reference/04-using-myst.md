@@ -4,7 +4,7 @@
 
 ### Building your site for the first time
 
-Every MyST site must have a `myst.yml` config file that defines the project.
+Every MyST site must have a `myst.yml` config file that defines the project. For this workshop, the file is located in the root directory of the repository.
 
 Right-click this file in the file browser and select the first item on the context menu:
 "Build MyST Project".

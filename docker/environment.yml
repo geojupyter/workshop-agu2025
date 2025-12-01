@@ -6,7 +6,7 @@ dependencies:
   - "jupyterlab>=4.4.2"
 
   # Some cool extensions
-  - "jupyterlab-favorites <3.3.0"  # 3.3.0 seems to introduce a bug duplicating headers in Notebook Markdown cells (https://jupyter.zulipchat.com/#narrow/channel/103349-ask-anything/topic/Duplicated.20headings.20in.20Markdown.20cells.3F/with/561263040)
+  - "jupyterlab-favorites <3.3.0"  # 3.3.0 seems to introduce a bug duplicating headers in Notebook Markdown cells (https://github.com/jupyterlab-contrib/jupyterlab-favorites/issues/35)
   - "jupyter-collaboration>=3,<4"
   - "jupyter-server-proxy"
   - "jupyterlab-myst"

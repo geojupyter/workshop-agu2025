@@ -156,8 +156,6 @@ process.
 ::::::{hint} Joining late? You may need to clone the workshop repository
 :class: dropdown
 
-Foo!
-
 If you're joining late, you may have missed a prior instruction to clone the workshop
 website and set up GitHub authentication.
 

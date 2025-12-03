@@ -11,6 +11,7 @@ dependencies:
   - "jupyter-server-proxy"
   - "jupyterlab-myst"
   - "jupyterlab-geojson"
+  - "jupyterlab_execute_time"
   - "nbdime"
 
   # Python mainstays

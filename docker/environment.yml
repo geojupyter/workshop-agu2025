@@ -11,6 +11,7 @@ dependencies:
   - "jupyter-server-proxy"
   - "jupyterlab-myst"
   - "jupyterlab-geojson"
+  - "jupyterlab_execute_time"
   - "nbdime"
 
   # Python mainstays
@@ -29,6 +30,9 @@ dependencies:
   - "shapely"
   - "fiona"
   - "pystac-client"
+  - "odc-stac"
+  - "ibis-duckdb"
+  - "exactextract"
 
   # geo viz
   - "jupytergis >=0.9.2"

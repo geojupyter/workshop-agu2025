@@ -17,7 +17,7 @@ authors:
 :class: dropdown
 
 <iframe
-    src="https://docs.google.com/presentation/d/e/2PACX-1vRe2ACdsZHjAfG_dpS_ZkDjLLG3qizsQCgWBgAXzetJlPz7DKVXWx3nrSfEK-LGEs_H8myf21tQzR9o/pubembed?start=false&loop=false&delayms=60000"
+    src="https://docs.google.com/presentation/d/1BRWaZUEfBJlKA9WL7jIdL_4jlQ24wohS_GNjYJCFliw/edit?usp=sharing/pubembed?start=false&loop=false&delayms=60000"
     frameborder="0"
     width="960"
     height="569"
@@ -34,18 +34,13 @@ authors:
 :::
 
 
-## Access the [CryoCloud powerpoint](https://docs.google.com/presentation/d/1sj5oSAnHQ5Le0zMNqy55T-esZqro-WjVOPJdv_BR08M/edit?usp=sharing) whenever you need to reference it
+## Access the [CryoCloud powerpoint](https://docs.google.com/presentation/d/1BRWaZUEfBJlKA9WL7jIdL_4jlQ24wohS_GNjYJCFliw/edit?usp=sharing) whenever you need to reference it
 
-Open the powerpoint by directly clicking on the hyperlink above or to open it in the CryoCloud Linux Desktop web browser as follows:
-
-- Copy this hyperlink: `https://docs.google.com/presentation/d/1sj5oSAnHQ5Le0zMNqy55T-esZqro-WjVOPJdv_BR08M/edit?usp=sharing`
-- Click on the plus (`+`) sign in the `File Browser` to the left to open a `Launcher` window
-- Under Notebooks, click on `Desktop` to access the Linux Desktop. This will open a new tab.
-- Click on the `Web Browser` tool (globe) at the bottom of the screen
-- Paste the url into the search bar
+Open the powerpoint by directly clicking on the hyperlink above.
 
 ![](./slides.png)
 
+---
 
 ## Open CryoCloud
 
@@ -63,18 +58,157 @@ server and having to rerun your analysis.**
 :::
 
 3) Sit back and learn about each of the tools!
+    - How to bring your own environment
     - JupyterHub options and viewing setup
     - Github
     - Virtual Linux desktop
     - SyncThing
     - Viewing and editing of different files
 
-Now after the demo...
+---
 
+## Bring Your Own environment (custom Docker image)
+
+CryoCloud allows you to launch your server using different software environments. Each environment corresponds to a Docker image, which defines the libraries, tools, and versions available to you. Switching Docker images is similar to switching between computers that have different applications installed.
+
+Using a custom Docker image is useful when you want:
+- A different software stack than the defaults
+- An older or reproducible version of CryoCloud’s environment  
+- A specialized environment from an external registry (e.g., Pangeo, Rocker)
+
+This feature is called **Bring Your Own Image (BYOI)**.
+
+
+### 1. Selecting an environment when launching CryoCloud
+
+When you open CryoCloud, the **Environment** dropdown provides:
+
+- Python  
+- R  
+- Matlab  
+- Other  
+- Build Your Own  
+
+To use a custom Docker image, select **Other**.  
+A field labeled **Custom image** will appear. This is where you will paste the Docker tag for the environment you want.
+
+![](./bring_own.png)
+
+
+### 2. Finding a Docker tag
+
+A Docker tag tells CryoCloud which exact environment to use. You can choose tags from CryoCloud’s maintained images or from Docker Hub.
+
+
+### Option A: Use an older or alternate CryoCloud environment
+
+CryoCloud publishes its Python environment image to Quay.io.
+
+1. Visit the repository tags page:  
+   https://quay.io/repository/cryointhecloud/cryo-hub-image?tab=tags
+
+2. Browse the available tags. Each tag corresponds to a specific version.
+
+3. Copy the full tag in the following form: `quay.io/cryointhecloud/cryo-hub-image:<tag>`
+
+Example:
+
+```
+quay.io/cryointhecloud/cryo-hub-image:e457bd429a1e
+```
+
+Paste the tag into the **Custom image** field on CryoCloud. For reference, this image is built from the code in: https://github.com/CryoInTheCloud/hub-image.
+
+```{image} ./image_tags.png
+:width: 60%
+:align: center
+```
+
+### Option B: Use an image from Docker Hub
+
+You may also use any public Docker image from Docker Hub.
+
+1. Search for images at:  
+   https://hub.docker.com/
+
+2. Tags typically follow this format: `account/image:tag`
+
+Example:
+```
+pangeo/ml-notebook:latest
+rocker/geospatial:4.4
+```
+
+Paste any valid tag into the **Custom image** field.
+
+
+### Example: Using a machine learning environment
+
+If you want a Pangeo machine learning environment, enter:
+```
+pangeo/ml-notebook:latest
+```
+
+CryoCloud will launch your session using that environment.
+
+
+### Tips
+
+- If an image does not launch, ensure it includes a Jupyter-compatible single-user interface.
+- Private images requiring authentication are not currently supported through the UI.
+- Images must be Linux-based and appropriate for JupyterHub.
+- Use explicit tags (not `latest`) when reproducibility is important.
+
+---
+
+## Build Your Own image
+
+CryoCloud also supports creating a fully customized environment using your own `environment.yml` file. This option is useful when you want complete control over the software stack and only want the packages you specify.
+
+When launching CryoCloud, select **Build Your Own** from the **Environment** dropdown.  
+A field labeled **Repository** will appear. This is where you will paste the URL of a GitHub repository that contains an `environment.yml` file.
+
+![](./build_your_own.png)
+
+
+### Example: Using a minimal template repository
+
+You can start with a simple example environment from the following template repository:
+
+```
+https://github.com/tsnow03/BuildOwnImage_template_env.git
+```
+
+To copy the correct link from your own repository:
+
+1. Open your GitHub repository.  
+2. Click the blue **Code** button.  
+3. Copy the HTTPS URL (it should end in `.git`).  
+
+CryoCloud will use the `environment.yml` found in that repository to build your image.
+
+
+### Building the Image
+
+1. Paste the repository URL into the **Repository** field.  
+2. Click **Build image**.
+
+CryoCloud will begin building a Docker image based on your `environment.yml`. Build times vary depending on the number of packages:
+
+- Simple environments: ~30 seconds  
+- Large or complex environments: up to ~1 hour  
+
+If the build process encounters an issue, an error message will appear in the log so you can revise your `environment.yml`.
+
+After the image is built once, you can easily select it again in future sessions.
+
+**Tip:** Test your `environment.yml` locally using Mamba before using Build Your Own to speed up the build process and avoid waiting through repeated failures.
+
+---
 
 ## Task: Clone the CryoCloud jupyterbook
 
-We will import the [CryoCloud Website Github repository](https://github.com/CryoInTheCloud/CryoCloudWebsite.git).
+We will import the [workshop repository](https://github.com/geojupyter/workshop-open-source-geospatial.git).
 
 To do this:
 1. Select the plus (`+`) sign above the `File Browser` to the left, which will bring up a `Launcher` window.
@@ -94,16 +228,21 @@ To do this:
 3. Now clone the hackweek code into your current directory:
 
    ```
-   https://github.com/CryoInTheCloud/CryoCloudWebsite.git
+   https://github.com/geojupyter/workshop-open-source-geospatial.git
    ```
 
 4. You will see the folder pop into your `File Browser` on the left if you have the current directory open.
    Click on the folder to navigate through the files.
 
-5. To open this tutorial, click on the `book` subdirectory > `tutorials` and double
-   click on `CryoCloud`.
+5. To open this tutorial, click on the `materials` subdirectory > `01-working-in-jupyterhub` and double
+   click on `index.md`.
    This should open up this tutorial in case you want to review it in the future.
 
+
+Now after the demo...
+
+
+---
 
 ## Shutting down your JupyterHub
 
@@ -121,12 +260,16 @@ We prefer you shut down the server when so we save that 90 minutes of computing 
 To do so:
 
 - In upper left, click on `File` > `Hub Control Panel`, which will open another tab
-- Click the `Stop Server` button. Once this button disappears after you clicked it, your server is off.
+- Click the red `Stop Server` button. Once this button disappears after you clicked it, your server is off.
 - Click `Log Out` in the top right of your screen and you will be logged out, or you can start a new server
 - You can now close this tab and the other tab where you were just working
 
-![](./stop_server.png)
+```{image} ./stop_server.png
+:width: 70%
+:align: center
+```
 
+---
 
 ## Summary
 

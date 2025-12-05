@@ -1,0 +1,16 @@
+[project]
+name = "04-data-in-the-cloud"
+version = "0.1.0"
+description = "Dependencies for module 4 - Data in the Cloud"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fsspec>=2025.10.0",
+    "h5netcdf>=1.7.3",
+    "icechunk>=1.1.12",
+    "ipykernel>=7.1.0",
+    "obspec-utils>=0.1.0",
+    "obstore>=0.8.2",
+    "s3fs>=2025.10.0",
+    "virtualizarr>=2.2.1",
+]

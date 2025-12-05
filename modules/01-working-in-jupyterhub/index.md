@@ -73,7 +73,7 @@ CryoCloud allows you to launch your server using different software environments
 
 Using a custom Docker image is useful when you want:
 - A different software stack than the defaults
-- An older or reproducible version of CryoCloud’s environment  
+- An older or reproducible version of CryoCloud’s environment
 - A specialized environment from an external registry (e.g., Pangeo, Rocker)
 
 This feature is called **Bring Your Own Image (BYOI)**.
@@ -83,13 +83,13 @@ This feature is called **Bring Your Own Image (BYOI)**.
 
 When you open CryoCloud, the **Environment** dropdown provides:
 
-- Python  
-- R  
-- Matlab  
-- Other  
-- Build Your Own  
+- Python
+- R
+- Matlab
+- Other
+- Build Your Own
 
-To use a custom Docker image, select **Other**.  
+To use a custom Docker image, select **Other**.
 A field labeled **Custom image** will appear. This is where you will paste the Docker tag for the environment you want.
 
 ![](./bring_own.png)
@@ -104,7 +104,7 @@ A Docker tag tells CryoCloud which exact environment to use. You can choose tags
 
 CryoCloud publishes its Python environment image to Quay.io.
 
-1. Visit the repository tags page:  
+1. Visit the repository tags page:
    https://quay.io/repository/cryointhecloud/cryo-hub-image?tab=tags
 
 2. Browse the available tags. Each tag corresponds to a specific version.
@@ -128,7 +128,7 @@ Paste the tag into the **Custom image** field on CryoCloud. For reference, this 
 
 You may also use any public Docker image from Docker Hub.
 
-1. Search for images at:  
+1. Search for images at:
    https://hub.docker.com/
 
 2. Tags typically follow this format: `account/image:tag`
@@ -165,7 +165,7 @@ CryoCloud will launch your session using that environment.
 
 CryoCloud also supports creating a fully customized environment using your own `environment.yml` file. This option is useful when you want complete control over the software stack and only want the packages you specify.
 
-When launching CryoCloud, select **Build Your Own** from the **Environment** dropdown.  
+When launching CryoCloud, select **Build Your Own** from the **Environment** dropdown.
 A field labeled **Repository** will appear. This is where you will paste the URL of a GitHub repository that contains an `environment.yml` file.
 
 ![](./build_your_own.png)
@@ -181,22 +181,22 @@ https://github.com/tsnow03/BuildOwnImage_template_env.git
 
 To copy the correct link from your own repository:
 
-1. Open your GitHub repository.  
-2. Click the blue **Code** button.  
-3. Copy the HTTPS URL (it should end in `.git`).  
+1. Open your GitHub repository.
+2. Click the blue **Code** button.
+3. Copy the HTTPS URL (it should end in `.git`).
 
 CryoCloud will use the `environment.yml` found in that repository to build your image.
 
 
 ### Building the Image
 
-1. Paste the repository URL into the **Repository** field.  
+1. Paste the repository URL into the **Repository** field.
 2. Click **Build image**.
 
 CryoCloud will begin building a Docker image based on your `environment.yml`. Build times vary depending on the number of packages:
 
-- Simple environments: ~30 seconds  
-- Large or complex environments: up to ~1 hour  
+- Simple environments: ~30 seconds
+- Large or complex environments: up to ~1 hour
 
 If the build process encounters an issue, an error message will appear in the log so you can revise your `environment.yml`.
 

@@ -1,3 +1,11 @@
+# AGU 2025 Workshop: Open Geospatial Workflows in the Cloud
+
+**What**: A full-day hands-on workshop. **All materials are available on this website**!
+
+**When**: Thursday, December 18, 2025 @ 8:30 AM - 5:00 PM CT
+
+**Where**: New Orleans Convention Center rooms 333-334
+
 :::{attention} 🏗️  Under development
 :icon: false
 

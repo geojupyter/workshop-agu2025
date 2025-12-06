@@ -1,9 +1,23 @@
+# AGU 2025 Workshop: Open Geospatial Workflows in the Cloud
+
+**What**: A full-day hands-on workshop; breakfast, lunch, and coffee provided.
+**All materials are available on this website**!
+AGU's identifier for this workshop is [SCIWS10](https://agu.confex.com/agu/agu25/meetingapp.cgi/Session/252640).
+The GeoJupyter community is hosting a total of 4 events; you can learn more at the
+[GeoJupyter @ AGU2025 landing page](https://events.geojupyter.org/conferences/2025-agu/)!
+
+**When**: Thursday, December 18, 2025 @ 8:30 AM - 5:00 PM CT
+
+**Where**: New Orleans Convention Center rooms 333-334
+
 :::{attention} 🏗️  Under development
 :icon: false
 
 These materials are under development and subject to change all the way until
 AGU!
 :::
+
+## Workshop abstract
 
 In an era where cutting-edge research demands flexibility, collaboration, and
 reproducibility, having the right set of tools is imperative.

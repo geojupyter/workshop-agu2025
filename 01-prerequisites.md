@@ -3,7 +3,7 @@
 This workshop requires a few prerequisites:
 
 
-## A computer with a web browser installed
+## A *fully-charged* computer with a web browser installed
 
 All activities in this workshop will be performed in a cloud computing environment
 called [CryoCloud](https://cryointhecloud.com/).
@@ -15,6 +15,15 @@ This means you can participate even on a Chromebook or a locked-down corporate c
 ## A GitHub account
 
 Please [sign up for a GitHub account](https://github.com/signup) if you haven't already.
+
+
+## Accept invitation to CryoCloud Slack
+
+You have been sent an invitation to join the CryoCloud Slack!
+Please accept it!
+
+All asynchronous support will occur on this Slack; if you need support with setup steps
+or questions after the workshop, Slack is the best place to ask.
 
 
 ## Complete the CryoCloud onboarding process
@@ -45,3 +54,14 @@ will give you access to log in to CryoCloud.
   right up!
   * You will see a dialog to "Authorize nasa-cryo-prod" on your first login.
     **Click the green "Authorize 2i2c-org" button**.
+
+
+## Read relevant codes of conduct
+
+### [The AGU Code of Conduct](https://connect.agu.org/codeofconduct)
+
+Specifically, please read the sections titled **The rules** and **Discussion group
+etiquette**.
+
+
+### [The CryoCloud Code of Conduct](https://book.cryointhecloud.com/code-of-conduct)

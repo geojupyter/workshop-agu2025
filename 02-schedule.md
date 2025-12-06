@@ -7,6 +7,11 @@ These materials are under development and subject to change all the way until
 AGU!
 :::
 
+## 🍽️ Breakfast!
+
+Breakfast will be provided in the room.
+
+
 ## 🌅 Morning (8:30 - 12:00)
 
 | Time     | Duration   | Topic                                         | Presenter(s) |
@@ -21,11 +26,8 @@ AGU!
 
 ## 🍽️ Lunch! (12:00 - 1:30)
 
-:::{important}
-AGU does not provide lunch.
+Lunch will be provided in the room.
 
-We may do a group order for food delivery.
-:::
 
 ## 🌇 Afternoon (1:30 - 5:00)
 

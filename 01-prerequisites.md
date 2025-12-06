@@ -17,6 +17,15 @@ This means you can participate even on a Chromebook or a locked-down corporate c
 Please [sign up for a GitHub account](https://github.com/signup) if you haven't already.
 
 
+## Accept invitation to CryoCloud Slack
+
+You have been sent an invitation to join the CryoCloud Slack!
+Please accept it!
+
+All asynchronous support will occur on this Slack; if you need support with setup steps
+or questions after the workshop, Slack is the best place to ask.
+
+
 ## Complete the CryoCloud onboarding process
 
 1. Fill out this short [Getting Started Survey](https://forms.gle/d8oP1gp9YikS2ixM8) to give us the

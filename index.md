@@ -13,6 +13,8 @@ These materials are under development and subject to change all the way until
 AGU!
 :::
 
+## Workshop abstract
+
 In an era where cutting-edge research demands flexibility, collaboration, and
 reproducibility, having the right set of tools is imperative.
 This workshop propels you into the future with modern, cloud-based workflows for

@@ -45,3 +45,14 @@ will give you access to log in to CryoCloud.
   right up!
   * You will see a dialog to "Authorize nasa-cryo-prod" on your first login.
     **Click the green "Authorize 2i2c-org" button**.
+
+
+## Read relevant codes of conduct
+
+### [The AGU Code of Conduct](https://connect.agu.org/codeofconduct)
+
+Specifically, please read the sections titled **The rules** and **Discussion group
+etiquette**.
+
+
+### [The CryoCloud Code of Conduct](https://book.cryointhecloud.com/code-of-conduct)

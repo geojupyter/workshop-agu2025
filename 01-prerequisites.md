@@ -3,7 +3,7 @@
 This workshop requires a few prerequisites:
 
 
-## A computer with a web browser installed
+## A *fully-charged* computer with a web browser installed
 
 All activities in this workshop will be performed in a cloud computing environment
 called [CryoCloud](https://cryointhecloud.com/).

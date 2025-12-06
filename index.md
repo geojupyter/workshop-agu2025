@@ -2,6 +2,7 @@
 
 **What**: A full-day hands-on workshop; breakfast, lunch, and coffee provided.
 **All materials are available on this website**!
+AGU's identifier for this workshop is [SCIWS10](https://agu.confex.com/agu/agu25/meetingapp.cgi/Session/252640).
 
 **When**: Thursday, December 18, 2025 @ 8:30 AM - 5:00 PM CT
 
